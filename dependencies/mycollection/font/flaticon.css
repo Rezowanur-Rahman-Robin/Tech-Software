@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?5e5b2638b2c43edb00d83f8af21dda5b") format("truetype"),
+url("./flaticon.woff?5e5b2638b2c43edb00d83f8af21dda5b") format("woff"),
+url("./flaticon.woff2?5e5b2638b2c43edb00d83f8af21dda5b") format("woff2"),
+url("./flaticon.eot?5e5b2638b2c43edb00d83f8af21dda5b#iefix") format("embedded-opentype"),
+url("./flaticon.svg?5e5b2638b2c43edb00d83f8af21dda5b#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-ui-design:before {
+    content: "\f101";
+}
+.flaticon-smartphone:before {
+    content: "\f102";
+}
+.flaticon-conversation:before {
+    content: "\f103";
+}
+.flaticon-motherboard:before {
+    content: "\f104";
+}
+.flaticon-computer:before {
+    content: "\f105";
+}
+.flaticon-web-hosting:before {
+    content: "\f106";
+}
+.flaticon-music-note:before {
+    content: "\f107";
+}
+.flaticon-value:before {
+    content: "\f108";
+}
+.flaticon-video:before {
+    content: "\f109";
+}
+.flaticon-tracking:before {
+    content: "\f10a";
+}

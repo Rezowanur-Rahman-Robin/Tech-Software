@@ -1,0 +1,30 @@
+.item-main-title-wetech {
+  font-size: 55px;
+  color: #f31000;
+  font-weight: 1000;
+  line-height: 65px;
+  display: inline;
+  border: #f50053;
+}
+
+.logoCls {
+  height: 105px;
+}
+
+.history-box-layout1 .item-content {
+  transition: all 0.5s;
+}
+
+.history-box-layout1 .item-content:hover {
+  transform: scale(1.1);
+  background: #5a49f8;
+  color: white;
+}
+
+.history-box-layout1 .item-content:hover h3 {
+  color: white;
+}
+
+.history-box-layout1 .item-content:hover p {
+  color: white;
+}
