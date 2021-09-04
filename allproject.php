@@ -7,8 +7,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Contact 
-    </title>
+	<title>Our Projects</title>
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" type="image/x-icon" href="media/favicon.png">
@@ -57,15 +56,14 @@
 
 		<div id="main_content">
 
-		
-
-        <?php
+			
+<?php
 
 include("sections/header.php");
 
 ?>
 
-			<!--=====================================-->
+
 			<!--=         Main Banner Start         =-->
 			<!--=====================================-->
 			<section id="page-banner" class="page-banner bg-gradient-layout6 has-animation">
@@ -115,12 +113,12 @@ include("sections/header.php");
 				</ul>
 				<div class="container">
 					<div class="breadcrumbs-area">
-						<h1>Contact Us</h1>
+						<h1>All of Our Completed Projects</h1>
 						<ul>
 							<li>
 								<a href="index.php">Home</a>
 							</li>
-							<li>Contact</li>
+							<li>Projects</li>
 						</ul>
 					</div>
 				</div>
@@ -132,121 +130,196 @@ include("sections/header.php");
 			<!--=           Main Banner End         =-->
 			<!--=====================================-->
 			<!--=====================================-->
-			<!--=      Team Section Area Start      =-->
+			<!--=     Gallery Section Area Start    =-->
 			<!--=====================================-->
-			<section class="contact-wrap-layout3 section-padding-md-equal">
+			<section class="gallery-wrap-layout3 section2-padding-md-equal bg-color-light">
 				<div class="container">
-					<div class="row gutters-50">
-						<div class="col-lg-4 mb-5 has-animation">
-							<div class="single-item translate-left-75 opacity-animation transition-150 transition-delay-100">
-								<div class="address-box-layout2">
-									<div class="item-icon">
-										<i class="flaticon-mail"></i>
+					<div class="isotope-wrap">
+						<div class="isotope-classes-tab isotop-btn-layout1">
+							<a href="#" class="current nav-item" data-filter=".all">See All</a>
+							<a href="#" class="nav-item" data-filter=".mobile_app">Mobile App</a>
+							<a href="#" class="nav-item" data-filter=".web_app">Web App </a>
+							<a href="#" class="nav-item" data-filter=".ui">UI/UX</a>
+							<a href="#" class="nav-item" data-filter=".others">others</a>
+						</div>
+						<div class="row featuredContainer">
+							<div class="col-lg-4 col-sm-6 col-12 all mobile_app illustrations">
+								<div class="gallery-box-layout1">
+									<div class="item-figure">
+										<img src="media/gallery/gallery27.jpg" alt="gallery">
 									</div>
 									<div class="item-content">
-										<h3 class="item-title">Email &amp; Phone</h3>
-										<ul class="list-item">
-											<li>wetech.io@aol.com</li>
-											<li><li>+88 01745 968 765</li></li>
-                                            
-										</ul>
+										<div class="item-icon">
+											<a href="media/gallery/gallery27.jpg" class="popup-zoom" data-fancybox-group="gallery" title=""><i class="fas fa-plus"></i></a>
+										</div>
+										<h3 class="item-title"><a href="projectDetails.php">From Print to Platform</a></h3>
+										<p>Branding Items</p>
 									</div>
 								</div>
 							</div>
-							<div class="single-item translate-left-75 opacity-animation transition-150 transition-delay-600">
-								<div class="address-box-layout2">
-									<div class="item-icon">
-										<i class="flaticon-placeholder"></i>
+							<div class="col-lg-4 col-sm-6 col-12 all ui others">
+								<div class="gallery-box-layout1">
+									<div class="item-figure">
+										<img src="media/gallery/gallery28.jpg" alt="gallery">
 									</div>
 									<div class="item-content">
-										<h3 class="item-title">Our Location</h3>
-										<ul class="list-item">
-											<li>HOUSE: 185, ROAD: 19, BLOCK: K, SOUTH BANASREE, DHAKA-1219</li>
-											<li>+88 01745 968 765</li>
-                                            <li>+88 01689 542 929</li>
-										</ul>
+										<div class="item-icon">
+											<a href="media/gallery/gallery28.jpg" class="popup-zoom" data-fancybox-group="gallery" title=""><i class="fas fa-plus"></i></a>
+										</div>
+										<h3 class="item-title"><a href="projectDetails.php">From Print to Platform</a></h3>
+										<p>Branding Items</p>
 									</div>
 								</div>
 							</div>
-							<div class="single-item translate-left-75 opacity-animation transition-150 transition-delay-1100">
-								<div class="address-box-layout2">
-									<div class="item-icon">
-										<i class="flaticon-share"></i>
+							<div class="col-lg-4 col-sm-6 col-12 all mobile_app web_app">
+								<div class="gallery-box-layout1">
+									<div class="item-figure">
+										<img src="media/gallery/gallery29.jpg" alt="gallery">
 									</div>
 									<div class="item-content">
-										<h3 class="item-title">Get In Touch</h3>
-										<ul class="list-item">
-											<li><a mailto="wetech.io@aol.com">wetech.io@aol.com</a></li>
-											<li>	
-                                                <ul class="footer-social" style="display: flex;
-    justify-content: space-between;">
-										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-										<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-										<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-									</ul>
-                                </li>
-										</ul>
+										<div class="item-icon">
+											<a href="media/gallery/gallery29.jpg" class="popup-zoom" data-fancybox-group="gallery" title=""><i class="fas fa-plus"></i></a>
+										</div>
+										<h3 class="item-title"><a href="projectDetails.php">From Print to Platform</a></h3>
+										<p>Branding Items</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-sm-6 col-12 all ui">
+								<div class="gallery-box-layout1">
+									<div class="item-figure">
+										<img src="media/gallery/gallery30.jpg" alt="gallery">
+									</div>
+									<div class="item-content">
+										<div class="item-icon">
+											<a href="media/gallery/gallery30.jpg" class="popup-zoom" data-fancybox-group="gallery" title=""><i class="fas fa-plus"></i></a>
+										</div>
+										<h3 class="item-title"><a href="projectDetails.php">From Print to Platform</a></h3>
+										<p>Branding Items</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-sm-6 col-12 all mobile_app ui">
+								<div class="gallery-box-layout1">
+									<div class="item-figure">
+										<img src="media/gallery/gallery31.jpg" alt="gallery">
+									</div>
+									<div class="item-content">
+										<div class="item-icon">
+											<a href="media/gallery/gallery31.jpg" class="popup-zoom" data-fancybox-group="gallery" title=""><i class="fas fa-plus"></i></a>
+										</div>
+										<h3 class="item-title"><a href="projectDetails.php">From Print to Platform</a></h3>
+										<p>Branding Items</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-sm-6 col-12 all web_app ui">
+								<div class="gallery-box-layout1">
+									<div class="item-figure">
+										<img src="media/gallery/gallery32.jpg" alt="gallery">
+									</div>
+									<div class="item-content">
+										<div class="item-icon">
+											<a href="media/gallery/gallery32.jpg" class="popup-zoom" data-fancybox-group="gallery" title=""><i class="fas fa-plus"></i></a>
+										</div>
+										<h3 class="item-title"><a href="projectDetails.php">From Print to Platform</a></h3>
+										<p>Branding Items</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-sm-6 col-12 all mobile_app ui">
+								<div class="gallery-box-layout1">
+									<div class="item-figure">
+										<img src="media/gallery/gallery33.jpg" alt="gallery">
+									</div>
+									<div class="item-content">
+										<div class="item-icon">
+											<a href="media/gallery/gallery33.jpg" class="popup-zoom" data-fancybox-group="gallery" title=""><i class="fas fa-plus"></i></a>
+										</div>
+										<h3 class="item-title"><a href="projectDetails.php">From Print to Platform</a></h3>
+										<p>Branding Items</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-sm-6 col-12 all others">
+								<div class="gallery-box-layout1">
+									<div class="item-figure">
+										<img src="media/gallery/gallery34.jpg" alt="gallery">
+									</div>
+									<div class="item-content">
+										<div class="item-icon">
+											<a href="media/gallery/gallery34.jpg" class="popup-zoom" data-fancybox-group="gallery" title=""><i class="fas fa-plus"></i></a>
+										</div>
+										<h3 class="item-title"><a href="projectDetails.php">From Print to Platform</a></h3>
+										<p>Branding Items</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-sm-6 col-12 all web_app">
+								<div class="gallery-box-layout1">
+									<div class="item-figure">
+										<img src="media/gallery/gallery35.jpg" alt="gallery">
+									</div>
+									<div class="item-content">
+										<div class="item-icon">
+											<a href="media/gallery/gallery35.jpg" class="popup-zoom" data-fancybox-group="gallery" title=""><i class="fas fa-plus"></i></a>
+										</div>
+										<h3 class="item-title"><a href="projectDetails.php">From Print to Platform</a></h3>
+										<p>Branding Items</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-sm-6 col-12 all mobile_app ul">
+								<div class="gallery-box-layout1">
+									<div class="item-figure">
+										<img src="media/gallery/gallery36.jpg" alt="gallery">
+									</div>
+									<div class="item-content">
+										<div class="item-icon">
+											<a href="media/gallery/gallery36.jpg" class="popup-zoom" data-fancybox-group="gallery" title=""><i class="fas fa-plus"></i></a>
+										</div>
+										<h3 class="item-title"><a href="projectDetails.php">From Print to Platform</a></h3>
+										<p>Branding Items</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-sm-6 col-12 all mobile_app">
+								<div class="gallery-box-layout1">
+									<div class="item-figure">
+										<img src="media/gallery/gallery37.jpg" alt="gallery">
+									</div>
+									<div class="item-content">
+										<div class="item-icon">
+											<a href="media/gallery/gallery37.jpg" class="popup-zoom" data-fancybox-group="gallery" title=""><i class="fas fa-plus"></i></a>
+										</div>
+										<h3 class="item-title"><a href="projectDetails.php">From Print to Platform</a></h3>
+										<p>Branding Items</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-sm-6 col-12 all ul">
+								<div class="gallery-box-layout1">
+									<div class="item-figure">
+										<img src="media/gallery/gallery38.jpg" alt="gallery">
+									</div>
+									<div class="item-content">
+										<div class="item-icon">
+											<a href="media/gallery/gallery38.jpg" class="popup-zoom" data-fancybox-group="gallery" title=""><i class="fas fa-plus"></i></a>
+										</div>
+										<h3 class="item-title"><a href="projectDetails.php">From Print to Platform</a></h3>
+										<p>Branding Items</p>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-8 has-animation">
-							<div class="contact-box-layout3">
-								<form class="contact-form-box" id="contact-form">
-									<div class="row">
-										<div class="col-md-6 form-group">
-											<div class="translate-bottom-50 opacity-animation transition-100 transition-delay-1200">
-												<input type="text" placeholder="Name" class="form-control" name="name" data-error="Name field is required" required>
-												<div class="help-block with-errors"></div>
-											</div>
-										</div>
-										<div class="col-md-6 form-group">
-											<div class="translate-bottom-50 opacity-animation transition-100 transition-delay-1400">
-												<input type="email" placeholder="Email" class="form-control" name="email" data-error="Email field is required" required>
-												<div class="help-block with-errors"></div>
-											</div>
-										</div>
-										<div class="col-12 form-group">
-											<div class="translate-bottom-50 opacity-animation transition-100 transition-delay-1600">
-												<input type="text" placeholder="Subject" class="form-control" name="subject" data-error="Subject field is required" required>
-												<div class="help-block with-errors"></div>
-											</div>
-										</div>
-										<div class="col-12 form-group">
-											<div class="translate-bottom-50 opacity-animation transition-100 transition-delay-1800">
-												<textarea placeholder="Comment" class="textarea form-control" name="message" id="form-message" rows="7" cols="20" data-error="Message field is required" required></textarea>
-												<div class="help-block with-errors"></div>
-											</div>
-										</div>
-										<div class="col-12 form-group mb-0">
-											<div class="translate-bottom-50 opacity-animation transition-100 transition-delay-2000">
-												<button type="submit" class="btn-fill btn-gradient">Send Message</button>
-											</div>
-										</div>
-									</div>
-									<div class="form-response"></div>
-								</form>
-							</div>
-						</div>
-					</div>
-					<div class="box-bottom-margin">
-						<div class="google-map">
-							<h2>Find us on Map</h2> <hr>
-						<div class="mapouter"><div class="gmap_canvas"><iframe width="663" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=South%20Banasree,%20Dhaka-1219&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:663px;}</style><a href="https://www.embedgooglemap.net">embed google map responsive</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:663px;}</style></div></div>
-						</div>
-
 					</div>
 				</div>
 			</section>
 			<!--=====================================-->
-			<!--=       Team Section Area End       =-->
+			<!--=      Gallery Section Area End     =-->
 			<!--=====================================-->
-	
-
-
-            <?php
+			
+<?php
 
 include("sections/brandSection.php");
 
@@ -271,9 +344,6 @@ include("sections/toggleMenu.php");
 include("sections/footerSection.php");
 
 ?>
-
-
-
 
 
 		</div>
@@ -314,5 +384,4 @@ include("sections/footerSection.php");
 </body>
 
 
-<!-- Mirrored from www.radiustheme.com/demo/html/digeco/digeco/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Aug 2021 21:42:54 GMT -->
 </html>

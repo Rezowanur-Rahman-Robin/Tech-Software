@@ -140,12 +140,12 @@ include("sections/header.php");
 								<div class="content-holder">
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-100">
 										<div class="icon-holder icon-color-emerald">
-											<i class="flaticon-smartphone"></i>
+											<i class="flaticon-testing"></i>
 										</div>
                                        
 									</div>
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-600">
-										<h2 class="item-title">Mobile Application</h2>
+										<h2 class="item-title">Saok Testing</h2>
 									</div>
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1100">
 										<div class="sub-paragraph">Lorem ipsum dolor sit amet, consectetur a sed eiusmod the tempor incididunt ut labore dummy alom.</div>
@@ -161,59 +161,13 @@ include("sections/header.php");
 							<div class="service-details-box">
 								<div class="item-figure">
 									<div class="translate-right-75 opacity-animation transition-150 transition-delay-500">
-										<img src="media/illustration/mobile.jpg" alt="Service">
+										<img src="media/illustration/testing.jpg" alt="Service">
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="row box-bottom-margin has-animation">
-						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="service-details-box">
-								<div class="translate-zoomout-50 opacity-animation transition-150 transition-delay-100">
-									<div class="feature-item dodger-blue">
-										<div class="feature-icon"><i class="flaticon-responsive"></i></div>
-										<div class="feature-number">1</div>
-										<h3 class="feature-title">Fully Responsive</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="service-details-box">
-								<div class="translate-zoomout-50 opacity-animation transition-150 transition-delay-600">
-									<div class="feature-item sunset-orange">
-										<div class="feature-icon"><i class="flaticon-hand"></i></div>
-										<div class="feature-number">2</div>
-										<h3 class="feature-title">Device Testing</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="service-details-box">
-								<div class="translate-zoomout-50 opacity-animation transition-150 transition-delay-1100">
-									<div class="feature-item royal-blue">
-										<div class="feature-icon"><i class="flaticon-canvas"></i></div>
-										<div class="feature-number">3</div>
-										<h3 class="feature-title">Clean &amp; Modern</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="service-details-box">
-								<div class="translate-zoomout-50 opacity-animation transition-150 transition-delay-1600">
-									<div class="feature-item california">
-										<div class="feature-icon"><i class="flaticon-goal"></i></div>
-										<div class="feature-number">4</div>
-										<h3 class="feature-title">Great Experience</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
+					
 
 
             <!---  Left Finish  --->
@@ -424,12 +378,12 @@ include("sections/header.php");
                             <div class="content-holder">
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-100">
 										<div class="icon-holder icon-color-emerald">
-											<i class="flaticon-value"></i>
+											<i class="flaticon-web-hosting"></i>
 										</div>
                                        
 									</div>
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-600">
-										<h2 class="item-title">Commercial website</h2>
+										<h2 class="item-title">Domain & Hosting</h2>
 									</div>
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1100">
 										<div class="sub-paragraph">Lorem ipsum dolor sit amet, consectetur a sed eiusmod the tempor incididunt ut labore dummy alom.</div>
@@ -445,7 +399,7 @@ include("sections/header.php");
 							<div class="service-details-box">
 								<div class="item-figure">
 									<div class="translate-left-75 opacity-animation transition-150 transition-delay-100">
-										<img src="media/illustration/commercial.jpg" alt="Service">
+										<img src="media/illustration/hosting.png" alt="Service">
 									</div>
 								</div>
 							</div>
@@ -453,52 +407,7 @@ include("sections/header.php");
 					</div>
 
 
-                    <div class="row box-bottom-margin has-animation">
-						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="service-details-box">
-								<div class="translate-zoomout-50 opacity-animation transition-150 transition-delay-100">
-									<div class="feature-item dodger-blue">
-										<div class="feature-icon"><i class="flaticon-responsive"></i></div>
-										<div class="feature-number">1</div>
-										<h3 class="feature-title">Fully Responsive</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="service-details-box">
-								<div class="translate-zoomout-50 opacity-animation transition-150 transition-delay-600">
-									<div class="feature-item sunset-orange">
-										<div class="feature-icon"><i class="flaticon-hand"></i></div>
-										<div class="feature-number">2</div>
-										<h3 class="feature-title">Device Testing</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="service-details-box">
-								<div class="translate-zoomout-50 opacity-animation transition-150 transition-delay-1100">
-									<div class="feature-item royal-blue">
-										<div class="feature-icon"><i class="flaticon-canvas"></i></div>
-										<div class="feature-number">3</div>
-										<h3 class="feature-title">Clean &amp; Modern</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="service-details-box">
-								<div class="translate-zoomout-50 opacity-animation transition-150 transition-delay-1600">
-									<div class="feature-item california">
-										<div class="feature-icon"><i class="flaticon-goal"></i></div>
-										<div class="feature-number">4</div>
-										<h3 class="feature-title">Great Experience</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+               
 
                       <!---  Right Finish  --->
 
@@ -676,12 +585,12 @@ include("sections/header.php");
 								<div class="content-holder">
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-100">
 										<div class="icon-holder icon-color-emerald">
-											<i class="flaticon-design"></i>
+											<i class="flaticon-value"></i>
 										</div>
                                        
 									</div>
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-600">
-										<h2 class="item-title">Tailored software, Application or Website</h2>
+										<h2 class="item-title">SSL Commerce</h2>
 									</div>
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1100">
 										<div class="sub-paragraph">Lorem ipsum dolor sit amet, consectetur a sed eiusmod the tempor incididunt ut labore dummy alom.</div>
@@ -697,61 +606,13 @@ include("sections/header.php");
 							<div class="service-details-box">
 								<div class="item-figure">
 									<div class="translate-right-75 opacity-animation transition-150 transition-delay-500">
-										<img src="media/illustration/illustration19.png" alt="Service">
+										<img src="media/illustration/ssl.jpg" alt="Service">
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="row box-bottom-margin has-animation">
-						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="service-details-box">
-								<div class="translate-zoomout-50 opacity-animation transition-150 transition-delay-100">
-									<div class="feature-item dodger-blue">
-										<div class="feature-icon"><i class="flaticon-responsive"></i></div>
-										<div class="feature-number">1</div>
-										<h3 class="feature-title">Fully Responsive</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="service-details-box">
-								<div class="translate-zoomout-50 opacity-animation transition-150 transition-delay-600">
-									<div class="feature-item sunset-orange">
-										<div class="feature-icon"><i class="flaticon-hand"></i></div>
-										<div class="feature-number">2</div>
-										<h3 class="feature-title">Device Testing</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="service-details-box">
-								<div class="translate-zoomout-50 opacity-animation transition-150 transition-delay-1100">
-									<div class="feature-item royal-blue">
-										<div class="feature-icon"><i class="flaticon-canvas"></i></div>
-										<div class="feature-number">3</div>
-										<h3 class="feature-title">Clean &amp; Modern</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="service-details-box">
-								<div class="translate-zoomout-50 opacity-animation transition-150 transition-delay-1600">
-									<div class="feature-item california">
-										<div class="feature-icon"><i class="flaticon-goal"></i></div>
-										<div class="feature-number">4</div>
-										<h3 class="feature-title">Great Experience</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-
+					
             <!---  Left Finish  --->
 
 

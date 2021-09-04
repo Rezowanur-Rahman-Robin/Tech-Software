@@ -28,3 +28,18 @@
 .history-box-layout1 .item-content:hover p {
   color: white;
 }
+
+.aspect_desc {
+  padding: 15px;
+  box-shadow: 0px 0px 8px #dbdbdb;
+  width: 100%;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.aspect_desc:hover {
+  background: #5a49f8;
+  color: white;
+  transform: translate(8px, 10px);
+  box-shadow: 0px 0px 8px #5a49f8;
+}

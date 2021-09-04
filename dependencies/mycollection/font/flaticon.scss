@@ -2,11 +2,11 @@ $flaticon-font: "flaticon";
 
 @font-face {
     font-family: $flaticon-font;
-    src: url("./flaticon.ttf?5e5b2638b2c43edb00d83f8af21dda5b") format("truetype"),
-url("./flaticon.woff?5e5b2638b2c43edb00d83f8af21dda5b") format("woff"),
-url("./flaticon.woff2?5e5b2638b2c43edb00d83f8af21dda5b") format("woff2"),
-url("./flaticon.eot?5e5b2638b2c43edb00d83f8af21dda5b#iefix") format("embedded-opentype"),
-url("./flaticon.svg?5e5b2638b2c43edb00d83f8af21dda5b#flaticon") format("svg");
+    src: url("./flaticon.ttf?23126ad76143ebbb5f210c86af6f93a2") format("truetype"),
+url("./flaticon.woff?23126ad76143ebbb5f210c86af6f93a2") format("woff"),
+url("./flaticon.woff2?23126ad76143ebbb5f210c86af6f93a2") format("woff2"),
+url("./flaticon.eot?23126ad76143ebbb5f210c86af6f93a2#iefix") format("embedded-opentype"),
+url("./flaticon.svg?23126ad76143ebbb5f210c86af6f93a2#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -31,6 +31,7 @@ $flaticon-map: (
     "value": "\f108",
     "video": "\f109",
     "tracking": "\f10a",
+    "testing": "\f10b",
 );
 
 .flaticon-ui-design:before {
@@ -62,4 +63,7 @@ $flaticon-map: (
 }
 .flaticon-tracking:before {
     content: map-get($flaticon-map, "tracking");
+}
+.flaticon-testing:before {
+    content: map-get($flaticon-map, "testing");
 }

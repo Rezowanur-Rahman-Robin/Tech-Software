@@ -28,19 +28,10 @@
 							  </li>
 						
 							  <li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<a class="nav-link " href="allproject.php" >
 								  Projects
 								</a>
-								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								  <a class="dropdown-item" href="#">Project A</a>
-								  <a class="dropdown-item" href="#">Project B</a>
-								  <a class="dropdown-item" href="#">Project C</a>
-                                  
-								  <a class="dropdown-item" href="#">Project D</a>
-                                  
-								  <a class="dropdown-item" href="#">Project E</a>
-								  
-								</div>
+							
 							  </li>
 							<li  class="nav-item">
 								<a href="#">Career</a>

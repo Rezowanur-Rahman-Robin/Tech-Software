@@ -72,7 +72,7 @@
 						</div>
 					</div>
 					<div class="text-center mt-3">
-						<a href="gallery-grid-2-column.html" class="btn-fill btn-gradient">View More<i class="flaticon-next"></i></a>
+						<a href="allproject.php" class="btn-fill btn-gradient">View More<i class="flaticon-next"></i></a>
 					</div>
 				</div>
 			</section>

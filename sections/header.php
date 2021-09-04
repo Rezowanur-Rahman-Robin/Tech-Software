@@ -38,15 +38,8 @@
 											
 											</li>
 											<li>
-												<a href="#">Projects</a>
-												<ul class="dropdown-menu-col-1">
-													<li><a href=""><span>Project A</span></a></li>
-													<li><a href=""><span>Project B</span></a></li>
-													<li><a href=""><span>Project C</span></a></li>
-													<li><a href=""><span>Project D</span></a></li>
-													<li><a href=""><span>Project E</span></a></li>
-													
-												</ul>
+												<a href="allproject.php">Projects</a>
+											
 											</li>
 											<li>
 												<a href="#">Career</a>

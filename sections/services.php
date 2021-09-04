@@ -52,15 +52,15 @@
 								<div class="service-box-layout1">
 									<div class="icon-holder icon-bg-california">
 										<div class="item-icon icon-color-california">
-											<i class="flaticon-smartphone"></i>
+											<i class="flaticon-testing"></i>
 										</div>
 										<svg class="icon-bg-shape" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="80px">
 								<path d="M95.798,66.493 C95.402,67.238 94.989,67.934 94.568,68.608 C92.140,72.492 89.322,75.200 86.228,76.996 C75.718,83.098 62.044,78.694 49.794,74.183 C30.107,66.931 13.369,52.019 4.629,32.917 C0.428,23.737 -1.365,11.491 6.138,4.714 C11.356,0.001 19.072,-0.185 26.172,0.068 C26.493,0.079 26.814,0.090 27.132,0.103 C31.363,0.275 35.595,0.448 39.826,0.620 C45.043,0.833 50.261,1.045 55.479,1.256 C57.205,1.327 58.931,1.397 60.658,1.467 C67.392,1.740 74.374,2.077 80.361,5.160 C89.583,9.908 94.528,20.156 97.310,30.121 C97.438,30.578 97.561,31.039 97.682,31.500 C100.721,43.123 101.423,55.927 95.798,66.493 Z"/>
 							</svg>
 									</div>
-									<h3 class="item-title"><a href="serviceDetails.php#mobile_Application" name="mobile_Application">Mobile Application</a></h3>
+									<h3 class="item-title"><a href="serviceDetails.php#mobile_Application" >Saok Testing</a></h3>
 									<p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
-									<a href="service-details.html" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
+									<a href="serviceDetails.php#mobile_Application" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
 								</div>
 							</div>
 						</div>
@@ -78,7 +78,7 @@
 									<h3 class="item-title"><a href="serviceDetails.php#on_com">Online communication
 										Application</a></h3>
 									<p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
-									<a href="service-details.html" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
+									<a href="serviceDetails.php#on_com" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
 								</div>
 							</div>
 						</div>
@@ -95,7 +95,7 @@
 									</div>
 									<h3 class="item-title"><a href="serviceDetails.php#hard_sol">Hardware Solution</a></h3>
 									<p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
-									<a href="service-details.html" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
+									<a href="serviceDetails.php#hard_sol" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
 								</div>
 							</div>
 						</div>
@@ -112,7 +112,7 @@
 									</div>
 									<h3 class="item-title"><a href="serviceDetails.php#com_soft">Computer Software</a></h3>
 									<p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
-									<a href="service-details.html" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
+									<a href="serviceDetails.php#com_soft" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
 								</div>
 							</div>
 						</div>
@@ -129,7 +129,7 @@
 									</div>
 									<h3 class="item-title"><a href="serviceDetails.php#m_host">Music Hosting website</a></h3>
 									<p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
-									<a href="service-details.html" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
+									<a href="serviceDetails.php#m_host" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
 								</div>
 							</div>
 						</div>
@@ -140,15 +140,15 @@
 								<div class="service-box-layout1">
 									<div class="icon-holder icon-bg-turquoise">
 										<div class="item-icon icon-color-turquoise">
-											<i class="flaticon-value"></i>
+											<i class="flaticon-web-hosting"></i>
 										</div>
 										<svg class="icon-bg-shape" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="112px" height="81px">
 								<path d="M94.170,75.633 C89.320,80.748 82.081,83.923 75.335,81.794 C69.399,79.922 65.020,74.470 59.599,71.197 C51.098,66.064 40.914,66.687 31.305,66.427 C27.387,66.323 23.278,65.938 19.374,64.964 C15.436,63.982 11.710,62.398 8.596,59.896 C7.227,58.797 5.976,57.524 4.879,56.041 C3.059,53.582 1.896,50.791 1.293,47.862 C-0.404,39.611 2.385,30.251 7.785,24.023 C13.919,16.948 22.510,13.058 31.345,10.292 C33.050,9.757 34.764,9.266 36.470,8.800 C39.687,7.924 42.924,7.120 46.176,6.383 C57.811,3.738 69.652,1.969 81.586,1.107 C82.278,1.057 82.974,1.011 83.672,0.974 C87.959,0.740 92.319,0.840 96.367,2.483 C105.518,6.200 110.819,17.150 111.330,27.451 C112.127,43.538 104.736,64.487 94.170,75.633 Z"/>
 							</svg>
 									</div>
-									<h3 class="item-title"><a href="serviceDetails.php#com_web">Commercial website</a></h3>
+									<h3 class="item-title"><a href="serviceDetails.php#com_web">Domain & Hosting</a></h3>
 									<p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
-									<a href="service-details.html" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
+									<a href="serviceDetails.php#com_web" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
 								</div>
 							</div>
 						</div>
@@ -166,7 +166,7 @@
 									</div>
 									<h3 class="item-title"><a href="serviceDetails.php#vid_web">Video hosting Website</a></h3>
 									<p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
-									<a href="service-details.html" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
+									<a href="serviceDetails.php#vid_web" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
 								</div>
 							</div>
 						</div>
@@ -184,7 +184,7 @@
 									</div>
 									<h3 class="item-title"><a href="serviceDetails.php#real_track">Real time tracking Website</a></h3>
 									<p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
-									<a href="service-details.html" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
+									<a href="serviceDetails.php#real_track" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
 								</div>
 							</div>
 						</div>
@@ -194,16 +194,15 @@
 								<div class="service-box-layout1">
 									<div class="icon-holder icon-bg-emerald">
 										<div class="item-icon icon-color-emerald">
-											<i class="flaticon-design"></i>
+											<i class="flaticon-value"></i>
 										</div>
 										<svg class="icon-bg-shape" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="111px" height="79px">
 								<path d="M104.291,51.828 C98.019,60.839 88.939,65.934 79.675,69.589 C78.703,69.973 77.729,70.339 76.756,70.695 C70.214,73.079 63.555,75.012 56.818,76.487 C52.170,77.504 46.185,79.782 41.377,78.729 C35.709,77.491 29.573,72.385 24.073,66.622 C19.930,62.282 16.148,57.570 13.202,53.858 C9.879,49.670 6.733,45.085 4.332,40.057 C2.705,36.648 1.416,33.039 0.660,29.205 C0.495,28.369 0.363,27.520 0.260,26.664 C-0.809,17.814 1.431,8.213 7.280,3.434 C12.395,-0.743 19.166,-0.569 25.289,1.096 C31.411,2.760 37.332,5.756 43.525,6.802 C50.958,8.057 58.411,6.451 65.704,4.762 C72.997,3.075 80.398,1.296 87.854,2.211 C88.123,2.244 88.392,2.289 88.661,2.332 C95.524,3.379 102.448,7.076 106.734,13.861 C106.943,14.192 107.153,14.521 107.349,14.867 C113.666,26.001 111.221,41.873 104.291,51.828 Z"/>
 							</svg>
 									</div>
-									<h3 class="item-title"><a href="serviceDetails.php#i_soft">Tailored software,
-										Application or Website</a></h3>
+									<h3 class="item-title"><a href="serviceDetails.php#i_soft">SSL Commerce</a></h3>
 									<p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
-									<a href="service-details.html" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
+									<a href="serviceDetails.php#i_soft" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
 								</div>
 							</div>
 						</div>
