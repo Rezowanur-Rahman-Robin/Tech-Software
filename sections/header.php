@@ -9,10 +9,10 @@
 							<div class="row no-gutters d-flex align-items-center position-relative">
 								<div class="col-lg-2 d-flex justify-content-start">
 									<div class="temp-logo text-center">
-										<a href="index.html" class="default-logo">
+										<a href="index.php" class="default-logo">
 						<img src="media/we_tech-logo.png" alt="logo" class="img-fluid logoCls">
 					</a>
-										<a href="index.html" class="sticky-logo">
+										<a href="index.php" class="sticky-logo">
 						<img src="media/we_tech-logo.png" alt="logo" class="img-fluid logoCls">
 					</a>
 									</div>
@@ -42,7 +42,7 @@
 											
 											</li>
 											<li>
-												<a href="#">Career</a>
+												<a href="career.php">Career</a>
 											
 											</li>
 											

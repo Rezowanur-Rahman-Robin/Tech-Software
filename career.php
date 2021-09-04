@@ -7,7 +7,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Project Details</title>
+	<title>Career </title>
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" type="image/x-icon" href="media/we_tech-logo.png">
@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="dependencies/fontawesome/css/all.min.css" type="text/css">
 	<link rel="stylesheet" href="dependencies/select2/css/select2.min.css" type="text/css">
 	<link rel="stylesheet" href="dependencies/flaticon/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/mycollection/font/flaticon.css" type="text/css">
 	<link rel="stylesheet" href="dependencies/wow/css/animate.css" type="text/css">
 	<link rel="stylesheet" href="dependencies/page-piling/css/jquery.pagepiling.min.css" type="text/css">
 	<link rel="stylesheet" href="dependencies/nivo-slider/css/nivo-slider.css" type="text/css">
@@ -29,7 +30,7 @@
 
 	<!-- Site Stylesheet -->
 	<link rel="stylesheet" href="assets/css/app.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/customize.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/customize.css" type="text/css">
 
 	<!-- Animation Stylesheet -->
 	<link rel="stylesheet" href="dependencies/animation-css/animation-css.css" type="text/css">
@@ -45,7 +46,7 @@
 	<div id="preloader" class="tlp-preloader">
 		<div class="animation-preloader">
 			<div class="tlp-spinner"></div>
-			<img src="media/we_tech-logo.png" alt="Preloader">
+			<img src="media/we_tech-logo.png" width='100' height='100' alt="Preloader">
 		</div>
 	</div>
 
@@ -56,15 +57,11 @@
 
 		<div id="main_content">
 
-			
-			
-<?php
+        <?php
 
 include("sections/header.php");
 
 ?>
-
-
 			<!--=====================================-->
 			<!--=         Main Banner Start         =-->
 			<!--=====================================-->
@@ -115,82 +112,119 @@ include("sections/header.php");
 				</ul>
 				<div class="container">
 					<div class="breadcrumbs-area">
-						<h1>Project Details</h1>
+						<h1>Join with our Team</h1>
 						<ul>
 							<li>
 								<a href="index.php">Home</a>
 							</li>
-							<li>Prime Edu Application Management</li>
+							<li>Career</li>
 						</ul>
 					</div>
 				</div>
 			</section>
 
+            <section id="current_job_section">
+                <div class="container">
+                    <h2 class="text-center mt-4" style="font-family: 'Roboto', sans-serif;     color: #292929;">
+                        Current Openings
+                    </h2>
+                    <hr>
+
+                    <div class="card career_box mb-4">
+                        <div class="row p-2">
+                            <div class="col-sm-1">
+                            <img src="media/svg/engineer.svg"  alt="engineer" class=" mt-3 ml-2" style="width:75px; height:75px">
+
+                            </div>
+
+                            <div class="col-sm-11 card-body">
+                            <div class="d-inline-block">
+                            <h3 class="card-text">Software Development Lead</h3>
+                            <p class="card-text">Javascript,Node js,React,MongoDB</p>
+                            </div>
+
+                            <a href="careerDetails.php" class="btn-fill btn-gradient float-right mr-4"> View Details </a>
 
 
-			<!--=====================================-->
-			<!--=           Main Banner End         =-->
-			<!--=====================================-->
-			<!--=====================================-->
-			<!--=      Team Section Area Start      =-->
-			<!--=====================================-->
-			<section class="gallery-details-wrap section-padding-md-equal bg-color-light">
-				<div class="container">
-					<div class="mb-5 rc-carousel nav-control-layout7" data-loop="true" data-items="5" data-margin="30" data-autoplay="false" data-autoplay-timeout="5000" data-smart-speed="700" data-dots="false" data-nav="true" data-nav-speed="false" data-r-x-small="1" data-r-x-small-nav="true"
-					 data-r-x-small-dots="false" data-r-x-medium="1" data-r-x-medium-nav="true" data-r-x-medium-dots="false" data-r-small="1" data-r-small-nav="true" data-r-small-dots="false" data-r-medium="1" data-r-medium-nav="true" data-r-medium-dots="false" data-r-large="1"
-					 data-r-large-nav="true" data-r-large-dots="false" data-r-extra-large="1" data-r-extra-large-nav="true" data-r-extra-large-dots="false">
-                     
-                     <img src="media/gallery/gallery91.jpg" alt="gallery">
-                     <img src="media/gallery/prime_edu.png" alt="gallery">
-					</div>
-					<div class="row">
-						<div class="col-lg-8">
-							<div class="gallery-details-box">
-								<div class="item-content">
+                             </div>
 
-                                
-									<h2 class="item-title">From Print To Platform</h2>
-									<p>Grursus mal suada faci lisis Lorem ipsum dolarorit more a ametion consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit to the consectetur elit. All the Lorem Ipsum generators on the Internet
-										tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
-										Grursus mal suada faci lisis Lorem ipsum dolarorit more a ametion consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit to the consectetur elit.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-12 template-sidebar">
-							<div class="widget bg-color-light">
-								<div class="widget-info">
-									<div class="item-content">
-										<div class="widget-section-heading heading-layout1">
-											<h3 class="item-heading text-center" style="border-bottom: 3px solid #5a49f8;">Main Aspects </h3> 
-										</div>
-										<div class="list-item d-block">
-											<div class="d-flex "><img width='30' height='30' class="mr-2" src="media/svg/check-mark.svg" alt=""> <span class="aspect_desc">ONLINE ATTENDANCE AND UPGRADED CLASS MANAGEMENT</span></div> <br>
-											<div class="d-flex"><img  width='30' height='30' class="mr-2"  src="media/svg/check-mark.svg" alt=""> <span class="aspect_desc">PROVIDING CLASS RESULTS</span> </div><br>
-											<div class="d-flex"><img width='30' height='30' class="mr-2"   src="media/svg/check-mark.svg" alt=""> <span class="aspect_desc">NOTICE BOARD FOR INDIVIDUAL SCHOOL AND CLASS</span> </div><br>
-											<div class="d-flex"><img  width='30' height='30' class="mr-2"  src="media/svg/check-mark.svg" alt=""> <span class="aspect_desc">NOTICE BOARD FOR INDIVIDUAL SCHOOL AND CLASS</span> </div><br>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				
-				</div>
-			</section>
-			<!--=====================================-->
-			<!--=       Team Section Area End       =-->
-			<!--=====================================-->
-	
-            
-<?php
 
-include("sections/contactSection.php");
+                         
+                        </div>
+
+                        
+                    </div>
+                    <div class="card career_box mb-4">
+                        <div class="row p-2">
+                            <div class="col-sm-1">
+                            <img src="media/svg/engineer.svg"  alt="engineer" class=" mt-3 ml-2" style="width:75px; height:75px">
+
+                            </div>
+
+                            <div class="col-sm-11 card-body">
+                            <div class="d-inline-block">
+                            <h3 class="card-text">Software Development Lead</h3>
+                            <p class="card-text">Javascript,Node js,React,MongoDB</p>
+                            </div>
+
+                            <a href="careerDetails.php" class="btn-fill btn-gradient float-right mr-4"> View Details </a>
+
+
+                             </div>
+
+
+                         
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="card career_box mb-4">
+                        <div class="row p-2">
+                            <div class="col-sm-1">
+                            <img src="media/svg/engineer.svg"  alt="engineer" class=" mt-3 ml-2" style="width:75px; height:75px">
+
+                            </div>
+
+                            <div class="col-sm-11 card-body">
+                            <div class="d-inline-block">
+                            <h3 class="card-text">Software Development Lead</h3>
+                            <p class="card-text">Javascript,Node js,React,MongoDB</p>
+                            </div>
+
+                            <a href="careerDetails.php" class="btn-fill btn-gradient float-right mr-4"> View Details </a>
+
+
+                             </div>
+
+
+                         
+                        </div>
+
+                        
+                    </div>
+
+                
+                
+
+                </div>
+            </section>
+
+
+
+		
+			
+
+
+            <?php
+
+include("sections/brandSection.php");
 
 ?>
 
 <?php
 
-include("sections/brandSection.php");
+include("sections/contactSection.php");
 
 ?>
 
@@ -252,5 +286,4 @@ include("sections/footerSection.php");
 </body>
 
 
-<!-- Mirrored from www.radiustheme.com/demo/html/digeco/digeco/gallery-details2.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Aug 2021 21:42:32 GMT -->
 </html>

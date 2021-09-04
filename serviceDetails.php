@@ -10,7 +10,7 @@
 	<title>Service Details </title>
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" type="image/x-icon" href="media/favicon.png">
+	<link rel="shortcut icon" type="image/x-icon" href="media/we_tech-logo.png">
 
 	<!-- Dependency Styles -->
 	<link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
@@ -46,7 +46,7 @@
 	<div id="preloader" class="tlp-preloader">
 		<div class="animation-preloader">
 			<div class="tlp-spinner"></div>
-			<img src="media/preloader.png" alt="Preloader">
+			<img src="media/we_tech-logo.png" width='100' height='100' alt="Preloader">
 		</div>
 	</div>
 
@@ -696,5 +696,4 @@ include("sections/footerSection.php");
 </body>
 
 
-<!-- Mirrored from www.radiustheme.com/demo/html/digeco/digeco/service-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Aug 2021 21:41:56 GMT -->
 </html>

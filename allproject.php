@@ -10,7 +10,7 @@
 	<title>Our Projects</title>
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" type="image/x-icon" href="media/favicon.png">
+	<link rel="shortcut icon" type="image/x-icon" href="media/we_tech-logo.png">
 
 	<!-- Dependency Styles -->
 	<link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
@@ -45,7 +45,7 @@
 	<div id="preloader" class="tlp-preloader">
 		<div class="animation-preloader">
 			<div class="tlp-spinner"></div>
-			<img src="media/preloader.png" alt="Preloader">
+			<img src="media/we_tech-logo.png" alt="Preloader">
 		</div>
 	</div>
 

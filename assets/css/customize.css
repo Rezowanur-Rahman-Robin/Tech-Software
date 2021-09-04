@@ -43,3 +43,24 @@
   transform: translate(8px, 10px);
   box-shadow: 0px 0px 8px #5a49f8;
 }
+
+.career_box {
+  box-shadow: 0px 0px 8px #dbdbdb;
+  transition: all 0.5s;
+  margin-bottom: 2rem;
+}
+
+.career_box:hover {
+  transform: scale(1.03);
+}
+
+.details_banner {
+  background: #5a49f8;
+
+  border-radius: 16px 16px 0 0;
+}
+.explanation_h5 {
+  color: #ffffff;
+  margin: 1rem;
+  padding: 0.3rem;
+}
