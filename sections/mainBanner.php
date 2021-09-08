@@ -37,7 +37,7 @@
 							<div class="translate-right-75 opacity-animation transition-150 transition-delay-2600">
 								<div class="main-banner-box-layout1">
 									<div class="item-figure">
-										<img src="media/illustration/illustration1.png" alt="Illustration">
+										<img src="media/illustration/illustration1.png" alt="Illustration" style="max-width:100% !important">
 									</div>
 								</div>
 							</div>

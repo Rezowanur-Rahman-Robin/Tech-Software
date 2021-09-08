@@ -27,18 +27,7 @@
 												<div class="help-block with-errors"></div>
 											</div>
 										</div>
-										<div class="col-12 form-group">
-											<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1000">
-												<select class="select2" name="subject">
-	                                    <option value="0">Software Licencing</option>
-	                                    <option value="1">Single-user license</option>
-	                                    <option value="2">Multi-user license</option>
-	                                    <option value="3">Site license</option>
-	                                    <option value="4">Intellectual property</option>
-	                                </select>
-												<div class="help-block with-errors"></div>
-											</div>
-										</div>
+									
 										<div class="col-12 form-group">
 											<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1300">
 												<textarea placeholder="Let us know what you need" class="textarea form-control" name="message" id="form-message" rows="7" cols="20" data-error="Message field is required" required></textarea>
@@ -59,7 +48,7 @@
 							<div class="contact-box-layout1 has-animation">
 								<div class="translate-right-75 transition-150 opacity-animation transition-delay-10">
 									<div class="item-figure">
-										<img src="media/illustration/illustration21.png" alt="Illustration">
+										<img src="media/illustration/illustration21.png" alt="Illustration" class="disp">
 									</div>
 								</div>
 							</div>

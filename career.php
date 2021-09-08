@@ -132,18 +132,18 @@ include("sections/header.php");
 
                     <div class="card career_box mb-4">
                         <div class="row p-2">
-                            <div class="col-sm-1">
-                            <img src="media/svg/engineer.svg"  alt="engineer" class=" mt-3 ml-2" style="width:75px; height:75px">
+                            <div class="col-sm-2">
+                            <img src="media/svg/engineer.svg"  alt="engineer" class=" mt-3 ml-2 rounded mx-auto d-block " style="width:75px; height:75px">
 
                             </div>
 
-                            <div class="col-sm-11 card-body">
+                            <div class="col-sm-10 card-body">
                             <div class="d-inline-block">
                             <h3 class="card-text">Software Development Lead</h3>
                             <p class="card-text">Javascript,Node js,React,MongoDB</p>
                             </div>
 
-                            <a href="careerDetails.php" class="btn-fill btn-gradient float-right mr-4"> View Details </a>
+                            <a href="careerDetails.php" class="btn-fill btn-gradient float-right mr-4 career_btn"> View Details </a>
 
 
                              </div>
@@ -156,18 +156,18 @@ include("sections/header.php");
                     </div>
                     <div class="card career_box mb-4">
                         <div class="row p-2">
-                            <div class="col-sm-1">
-                            <img src="media/svg/engineer.svg"  alt="engineer" class=" mt-3 ml-2" style="width:75px; height:75px">
+                            <div class="col-sm-2">
+                            <img src="media/svg/engineer.svg"  alt="engineer" class=" mt-3 ml-2 rounded mx-auto d-block" style="width:75px; height:75px">
 
                             </div>
 
-                            <div class="col-sm-11 card-body">
+                            <div class="col-sm-10 card-body">
                             <div class="d-inline-block">
                             <h3 class="card-text">Software Development Lead</h3>
                             <p class="card-text">Javascript,Node js,React,MongoDB</p>
                             </div>
 
-                            <a href="careerDetails.php" class="btn-fill btn-gradient float-right mr-4"> View Details </a>
+                            <a href="careerDetails.php" class="btn-fill btn-gradient float-right mr-4 career_btn"> View Details </a>
 
 
                              </div>
@@ -181,18 +181,18 @@ include("sections/header.php");
 
                     <div class="card career_box mb-4">
                         <div class="row p-2">
-                            <div class="col-sm-1">
-                            <img src="media/svg/engineer.svg"  alt="engineer" class=" mt-3 ml-2" style="width:75px; height:75px">
+                            <div class="col-sm-2">
+                            <img src="media/svg/engineer.svg"  alt="engineer" class=" mt-3 ml-2 rounded mx-auto d-block" style="width:75px; height:75px">
 
                             </div>
 
-                            <div class="col-sm-11 card-body">
+                            <div class="col-sm-10 card-body">
                             <div class="d-inline-block">
                             <h3 class="card-text">Software Development Lead</h3>
                             <p class="card-text">Javascript,Node js,React,MongoDB</p>
                             </div>
 
-                            <a href="careerDetails.php" class="btn-fill btn-gradient float-right mr-4"> View Details </a>
+                            <a href="careerDetails.php" class="btn-fill btn-gradient float-right mr-4 career_btn"> View Details </a>
 
 
                              </div>

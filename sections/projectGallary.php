@@ -15,7 +15,7 @@
 						<div class="col-lg-3 col-12">
 							<div class="gallery-box-layout1">
 								<div class="item-figure">
-									<img src="media/gallery/gallery1.jpg" alt="gallery">
+									<img src="media/gallery/gallery1.jpg" alt="gallery" class="gallary_img" >
 								</div>
 								<div class="item-content">
 									<div class="item-icon">
@@ -29,7 +29,7 @@
 						<div class="col-lg-3 col-12">
 							<div class="gallery-box-layout1">
 								<div class="item-figure">
-									<img src="media/gallery/gallery2.jpg" alt="gallery">
+									<img src="media/gallery/gallery2.jpg" alt="gallery" class="gallary_img">
 								</div>
 								<div class="item-content">
 									<div class="item-icon">
@@ -43,7 +43,7 @@
 						<div class="col-lg-3 col-12">
 							<div class="gallery-box-layout1">
 								<div class="item-figure">
-									<img src="media/gallery/gallery3.jpg" alt="gallery">
+									<img src="media/gallery/gallery3.jpg" alt="gallery" class="gallary_img">
 								</div>
 								<div class="item-content">
 									<div class="item-icon">
@@ -59,7 +59,7 @@
 						<div class="col-lg-3 col-12">
 							<div class="gallery-box-layout1">
 								<div class="item-figure">
-									<img src="media/gallery/gallery4.jpg" alt="gallery">
+									<img src="media/gallery/gallery4.jpg" alt="gallery" class="gallary_img">
 								</div>
 								<div class="item-content">
 									<div class="item-icon">

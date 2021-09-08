@@ -134,8 +134,221 @@ include("sections/header.php");
 			<section class="service-details-wrap section-padding-md-equal bg-color-accent2">
 				<div class="container">
 
-					<div class="row mb--60 d-flex align-items-center" id="mobile_Application">
+				<div class="row mb--60 d-flex align-items-center" id="ecom">
 						<div class="col-lg-6 has-animation pr-5">
+							<div class="service-details-box">
+								<div class="content-holder">
+									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-100">
+										<div class="icon-holder icon-color-emerald">
+											<i class="flaticon-origami"></i>
+										</div>
+                                       
+									</div>
+									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-600">
+										<h2 class="item-title">E Commerce Website</h2>
+									</div>
+									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1100">
+										<div class="sub-paragraph">Lorem ipsum dolor sit amet, consectetur a sed eiusmod the tempor incididunt ut labore dummy alom.</div>
+									</div>
+									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1600">
+										<p>Consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit to consectetur elit. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the
+											first generator on the Internet. It uses a dictionary of over 200 Latin words, That combined with a handful of model sentence generate Lorem the Ipsum which looks reasonable.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 has-animation">
+							<div class="service-details-box">
+								<div class="item-figure">
+									<div class="translate-right-75 opacity-animation transition-150 transition-delay-500">
+										<img src="media/illustration/ecom.jpg" alt="Service">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="row box-bottom-margin has-animation">
+						<div class="col-xl-3 col-sm-6 col-12">
+							<div class="service-details-box">
+								<div class="translate-zoomout-50 opacity-animation transition-150 transition-delay-100">
+									<div class="feature-item dodger-blue">
+										<div class="feature-icon"><i class="flaticon-responsive"></i></div>
+										<div class="feature-number">1</div>
+										<h3 class="feature-title">Fully Responsive</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-sm-6 col-12">
+							<div class="service-details-box">
+								<div class="translate-zoomout-50 opacity-animation transition-150 transition-delay-600">
+									<div class="feature-item sunset-orange">
+										<div class="feature-icon"><i class="flaticon-hand"></i></div>
+										<div class="feature-number">2</div>
+										<h3 class="feature-title">Device Testing</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-sm-6 col-12">
+							<div class="service-details-box">
+								<div class="translate-zoomout-50 opacity-animation transition-150 transition-delay-1100">
+									<div class="feature-item royal-blue">
+										<div class="feature-icon"><i class="flaticon-canvas"></i></div>
+										<div class="feature-number">3</div>
+										<h3 class="feature-title">Clean &amp; Modern</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-sm-6 col-12">
+							<div class="service-details-box">
+								<div class="translate-zoomout-50 opacity-animation transition-150 transition-delay-1600">
+									<div class="feature-item california">
+										<div class="feature-icon"><i class="flaticon-goal"></i></div>
+										<div class="feature-number">4</div>
+										<h3 class="feature-title">Great Experience</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					
+
+
+            <!---  Left Finish  --->
+
+
+					<div class="row d-flex align-items-center has-animation" id="mob">
+						<div class="col-lg-6 has-animation order-lg-2">
+							<div class="service-details-box">
+                            <div class="content-holder">
+									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-100">
+										<div class="icon-holder icon-color-emerald">
+											<i class="flaticon-smartphone"></i>
+										</div>
+                                       
+									</div>
+									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-600">
+										<h2 class="item-title">Mobile Application</h2>
+									</div>
+									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1100">
+										<div class="sub-paragraph">Lorem ipsum dolor sit amet, consectetur a sed eiusmod the tempor incididunt ut labore dummy alom.</div>
+									</div>
+									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1600">
+										<p>Consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit to consectetur elit. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the
+											first generator on the Internet. It uses a dictionary of over 200 Latin words, That combined with a handful of model sentence generate Lorem the Ipsum which looks reasonable.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 has-animation order-lg-1">
+							<div class="service-details-box">
+								<div class="item-figure">
+									<div class="translate-left-75 opacity-animation transition-150 transition-delay-100">
+										<img src="media/illustration/mobileapp.jpg" alt="Service">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row box-bottom-margin has-animation">
+						<div class="col-xl-3 col-sm-6 col-12">
+							<div class="service-details-box">
+								<div class="translate-zoomout-50 opacity-animation transition-150 transition-delay-100">
+									<div class="feature-item dodger-blue">
+										<div class="feature-icon"><i class="flaticon-responsive"></i></div>
+										<div class="feature-number">1</div>
+										<h3 class="feature-title">Fully Responsive</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-sm-6 col-12">
+							<div class="service-details-box">
+								<div class="translate-zoomout-50 opacity-animation transition-150 transition-delay-600">
+									<div class="feature-item sunset-orange">
+										<div class="feature-icon"><i class="flaticon-hand"></i></div>
+										<div class="feature-number">2</div>
+										<h3 class="feature-title">Device Testing</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-sm-6 col-12">
+							<div class="service-details-box">
+								<div class="translate-zoomout-50 opacity-animation transition-150 transition-delay-1100">
+									<div class="feature-item royal-blue">
+										<div class="feature-icon"><i class="flaticon-canvas"></i></div>
+										<div class="feature-number">3</div>
+										<h3 class="feature-title">Clean &amp; Modern</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-sm-6 col-12">
+							<div class="service-details-box">
+								<div class="translate-zoomout-50 opacity-animation transition-150 transition-delay-1600">
+									<div class="feature-item california">
+										<div class="feature-icon"><i class="flaticon-goal"></i></div>
+										<div class="feature-number">4</div>
+										<h3 class="feature-title">Great Experience</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+                      <!---  Right Finish  --->
+
+
+                      <div class="row mb--60 d-flex align-items-center" id="testing">
+						<div class="col-lg-6 has-animation pr-5">
+							<div class="service-details-box">
+								<div class="content-holder">
+									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-100">
+										<div class="icon-holder icon-color-emerald">
+											<i class="flaticon-think"></i>
+										</div>
+                                       
+									</div>
+									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-600">
+										<h2 class="item-title">Testing</h2>
+									</div>
+									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1100">
+										<div class="sub-paragraph">Lorem ipsum dolor sit amet, consectetur a sed eiusmod the tempor incididunt ut labore dummy alom.</div>
+									</div>
+									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1600">
+										<p>Consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit to consectetur elit. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the
+											first generator on the Internet. It uses a dictionary of over 200 Latin words, That combined with a handful of model sentence generate Lorem the Ipsum which looks reasonable.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 has-animation">
+							<div class="service-details-box">
+								<div class="item-figure">
+									<div class="translate-right-75 opacity-animation transition-150 transition-delay-500">
+										<img src="media/illustration/test.jpg" alt="Service">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+
+
+
+            <!---  Left Finish  --->
+
+
+					<div class="row d-flex align-items-center has-animation" id="mobile_Application">
+						<div class="col-lg-6 has-animation order-lg-2">
 							<div class="service-details-box">
 								<div class="content-holder">
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-100">
@@ -157,10 +370,10 @@ include("sections/header.php");
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-6 has-animation">
+						<div class="col-lg-6 has-animation order-lg-1">
 							<div class="service-details-box">
 								<div class="item-figure">
-									<div class="translate-right-75 opacity-animation transition-150 transition-delay-500">
+									<div class="translate-left-75 opacity-animation transition-150 transition-delay-100">
 										<img src="media/illustration/testing.jpg" alt="Service">
 									</div>
 								</div>
@@ -173,8 +386,8 @@ include("sections/header.php");
             <!---  Left Finish  --->
 
 
-					<div class="row d-flex align-items-center has-animation" id="on_com">
-						<div class="col-lg-6 has-animation order-lg-2">
+					<div class="row mb--60 d-flex align-items-center" id="on_com">
+						<div class="col-lg-6 has-animation pr-5">
 							<div class="service-details-box">
                             <div class="content-holder">
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-100">
@@ -199,7 +412,7 @@ include("sections/header.php");
 						<div class="col-lg-6 has-animation order-lg-1">
 							<div class="service-details-box">
 								<div class="item-figure">
-									<div class="translate-left-75 opacity-animation transition-150 transition-delay-100">
+									<div class="translate-right-75 opacity-animation transition-150 transition-delay-100">
 										<img src="media/illustration/chating.jpg" alt="Service">
 									</div>
 								</div>
@@ -210,8 +423,8 @@ include("sections/header.php");
                       <!---  Right Finish  --->
 
 
-                      <div class="row mb--60 d-flex align-items-center" id="hard_sol">
-						<div class="col-lg-6 has-animation pr-5">
+                      <div class="row d-flex align-items-center has-animation" id="hard_sol">
+						<div class="col-lg-6 has-animation order-lg-2">
 							<div class="service-details-box">
 								<div class="content-holder">
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-100">
@@ -236,7 +449,7 @@ include("sections/header.php");
 						<div class="col-lg-6 has-animation">
 							<div class="service-details-box">
 								<div class="item-figure">
-									<div class="translate-right-75 opacity-animation transition-150 transition-delay-500">
+									<div class="translate-left-75 opacity-animation transition-150 transition-delay-500">
 										<img src="media/illustration/illustration15.png" alt="Service">
 									</div>
 								</div>
@@ -250,8 +463,8 @@ include("sections/header.php");
             <!---  Left Finish  --->
 
 
-					<div class="row d-flex align-items-center has-animation" id="com_soft" >
-						<div class="col-lg-6 has-animation order-lg-2">
+					<div class="row mb--60 d-flex align-items-center" id="com_soft" >
+						<div class="col-lg-6 has-animation pr-5">
 							<div class="service-details-box">
                             <div class="content-holder">
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-100">
@@ -276,7 +489,7 @@ include("sections/header.php");
 						<div class="col-lg-6 has-animation order-lg-1">
 							<div class="service-details-box">
 								<div class="item-figure">
-									<div class="translate-left-75 opacity-animation transition-150 transition-delay-100">
+									<div class="translate-right-75 opacity-animation transition-150 transition-delay-100">
 										<img src="media/illustration/software.jpg" alt="Service">
 									</div>
 								</div>
@@ -287,8 +500,8 @@ include("sections/header.php");
                       <!---  Right Finish  --->
 
 
-                      <div class="row mb--60 d-flex align-items-center" id="m_host" >
-						<div class="col-lg-6 has-animation pr-5">
+                      <div class="row d-flex align-items-center has-animation" id="m_host" >
+						<div class="col-lg-6 has-animation order-lg-2">
 							<div class="service-details-box">
 								<div class="content-holder">
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-100">
@@ -313,7 +526,7 @@ include("sections/header.php");
 						<div class="col-lg-6 has-animation">
 							<div class="service-details-box">
 								<div class="item-figure">
-									<div class="translate-right-75 opacity-animation transition-150 transition-delay-500">
+									<div class="translate-left-75 opacity-animation transition-150 transition-delay-500">
 										<img src="media/illustration/music.jpg" alt="Service">
 									</div>
 								</div>
@@ -372,8 +585,8 @@ include("sections/header.php");
             <!---  Left Finish  --->
 
 
-					<div class="row d-flex align-items-center has-animation" id="com_web" >
-						<div class="col-lg-6 has-animation order-lg-2">
+					<div class="row mb--60 d-flex align-items-center" id="com_web" >
+						<div class="col-lg-6 has-animation pr-5">
 							<div class="service-details-box">
                             <div class="content-holder">
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-100">
@@ -398,7 +611,7 @@ include("sections/header.php");
 						<div class="col-lg-6 has-animation order-lg-1">
 							<div class="service-details-box">
 								<div class="item-figure">
-									<div class="translate-left-75 opacity-animation transition-150 transition-delay-100">
+									<div class="translate-right-75 opacity-animation transition-150 transition-delay-100">
 										<img src="media/illustration/hosting.png" alt="Service">
 									</div>
 								</div>
@@ -411,8 +624,8 @@ include("sections/header.php");
 
                       <!---  Right Finish  --->
 
-                      <div class="row mb--60 d-flex align-items-center" id="vid_web" >
-						<div class="col-lg-6 has-animation pr-5">
+                      <div class="row d-flex align-items-center has-animation" id="vid_web" >
+						<div class="col-lg-6 has-animation order-lg-2">
 							<div class="service-details-box">
 								<div class="content-holder">
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-100">
@@ -437,7 +650,7 @@ include("sections/header.php");
 						<div class="col-lg-6 has-animation">
 							<div class="service-details-box">
 								<div class="item-figure">
-									<div class="translate-right-75 opacity-animation transition-150 transition-delay-500">
+									<div class="translate-left-75 opacity-animation transition-150 transition-delay-500">
 										<img src="media/illustration/video.jpg" alt="Service">
 									</div>
 								</div>
@@ -496,8 +709,8 @@ include("sections/header.php");
             <!---  Left Finish  --->
 
 
-					<div class="row d-flex align-items-center has-animation" id="real_track">
-						<div class="col-lg-6 has-animation order-lg-2">
+					<div class="row mb--60 d-flex align-items-center" id="real_track">
+						<div class="col-lg-6 has-animation pr-5">
 							<div class="service-details-box">
                             <div class="content-holder">
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-100">
@@ -522,7 +735,7 @@ include("sections/header.php");
 						<div class="col-lg-6 has-animation order-lg-1">
 							<div class="service-details-box">
 								<div class="item-figure">
-									<div class="translate-left-75 opacity-animation transition-150 transition-delay-100">
+									<div class="translate-right-75 opacity-animation transition-150 transition-delay-100">
 										<img src="media/illustration/tracking.jpg" alt="Service">
 									</div>
 								</div>
@@ -579,8 +792,8 @@ include("sections/header.php");
 
                       <!---  Right Finish  --->
 
-                      <div class="row mb--60 d-flex align-items-center" id="i_soft" >
-						<div class="col-lg-6 has-animation pr-5">
+                      <div class="row d-flex align-items-center has-animation" id="i_soft" >
+						<div class="col-lg-6 has-animation order-lg-2">
 							<div class="service-details-box">
 								<div class="content-holder">
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-100">
@@ -605,7 +818,7 @@ include("sections/header.php");
 						<div class="col-lg-6 has-animation">
 							<div class="service-details-box">
 								<div class="item-figure">
-									<div class="translate-right-75 opacity-animation transition-150 transition-delay-500">
+									<div class="translate-left-75 opacity-animation transition-150 transition-delay-500">
 										<img src="media/illustration/ssl.jpg" alt="Service">
 									</div>
 								</div>

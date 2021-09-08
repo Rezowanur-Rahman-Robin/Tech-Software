@@ -8,7 +8,7 @@
 							<div class="col-xl-3 col-lg-3 col-md-6 col-12">
 								<div class="footer-widgets">
 									<div class="footer-logo">
-										<a href="index.html"><img src="media/logo.png" alt="Logo"></a>
+										<a href="index.php"><img src="media/we_tech-logo.png" class="footer_img" alt="Logo"></a>
 									</div>
 									<p class="about-paragraph">Grursus mal suada faci Lorem to the ipsum dolarorit more ametion more consectetur elit.</p>
 									<ul class="footer-social">

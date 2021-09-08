@@ -146,7 +146,7 @@ include("sections/header.php");
 							<div class="col-lg-4 col-sm-6 col-12 all mobile_app illustrations">
 								<div class="gallery-box-layout1">
 									<div class="item-figure">
-										<img src="media/gallery/gallery27.jpg" alt="gallery">
+										<img src="media/gallery/gallery27.jpg" alt="gallery" class="img-fluid mx-auto d-block" >
 									</div>
 									<div class="item-content">
 										<div class="item-icon">
@@ -160,7 +160,7 @@ include("sections/header.php");
 							<div class="col-lg-4 col-sm-6 col-12 all ui others">
 								<div class="gallery-box-layout1">
 									<div class="item-figure">
-										<img src="media/gallery/gallery28.jpg" alt="gallery">
+										<img src="media/gallery/gallery28.jpg" alt="gallery" class="img-fluid mx-auto d-block" class="img-fluid mx-auto d-block">
 									</div>
 									<div class="item-content">
 										<div class="item-icon">
@@ -174,7 +174,7 @@ include("sections/header.php");
 							<div class="col-lg-4 col-sm-6 col-12 all mobile_app web_app">
 								<div class="gallery-box-layout1">
 									<div class="item-figure">
-										<img src="media/gallery/gallery29.jpg" alt="gallery">
+										<img src="media/gallery/gallery29.jpg" alt="gallery" class="img-fluid mx-auto d-block">
 									</div>
 									<div class="item-content">
 										<div class="item-icon">
@@ -188,7 +188,7 @@ include("sections/header.php");
 							<div class="col-lg-4 col-sm-6 col-12 all ui">
 								<div class="gallery-box-layout1">
 									<div class="item-figure">
-										<img src="media/gallery/gallery30.jpg" alt="gallery">
+										<img src="media/gallery/gallery30.jpg" alt="gallery" class="img-fluid mx-auto d-block">
 									</div>
 									<div class="item-content">
 										<div class="item-icon">
@@ -202,7 +202,7 @@ include("sections/header.php");
 							<div class="col-lg-4 col-sm-6 col-12 all mobile_app ui">
 								<div class="gallery-box-layout1">
 									<div class="item-figure">
-										<img src="media/gallery/gallery31.jpg" alt="gallery">
+										<img src="media/gallery/gallery31.jpg" alt="gallery" class="img-fluid mx-auto d-block">
 									</div>
 									<div class="item-content">
 										<div class="item-icon">
@@ -216,7 +216,7 @@ include("sections/header.php");
 							<div class="col-lg-4 col-sm-6 col-12 all web_app ui">
 								<div class="gallery-box-layout1">
 									<div class="item-figure">
-										<img src="media/gallery/gallery32.jpg" alt="gallery">
+										<img src="media/gallery/gallery32.jpg" alt="gallery" class="img-fluid mx-auto d-block">
 									</div>
 									<div class="item-content">
 										<div class="item-icon">
@@ -230,7 +230,7 @@ include("sections/header.php");
 							<div class="col-lg-4 col-sm-6 col-12 all mobile_app ui">
 								<div class="gallery-box-layout1">
 									<div class="item-figure">
-										<img src="media/gallery/gallery33.jpg" alt="gallery">
+										<img src="media/gallery/gallery33.jpg" alt="gallery" class="img-fluid mx-auto d-block">
 									</div>
 									<div class="item-content">
 										<div class="item-icon">
@@ -244,7 +244,7 @@ include("sections/header.php");
 							<div class="col-lg-4 col-sm-6 col-12 all others">
 								<div class="gallery-box-layout1">
 									<div class="item-figure">
-										<img src="media/gallery/gallery34.jpg" alt="gallery">
+										<img src="media/gallery/gallery34.jpg" alt="gallery" class="img-fluid mx-auto d-block">
 									</div>
 									<div class="item-content">
 										<div class="item-icon">
@@ -258,7 +258,7 @@ include("sections/header.php");
 							<div class="col-lg-4 col-sm-6 col-12 all web_app">
 								<div class="gallery-box-layout1">
 									<div class="item-figure">
-										<img src="media/gallery/gallery35.jpg" alt="gallery">
+										<img src="media/gallery/gallery35.jpg" alt="gallery" class="img-fluid mx-auto d-block">
 									</div>
 									<div class="item-content">
 										<div class="item-icon">
@@ -272,7 +272,7 @@ include("sections/header.php");
 							<div class="col-lg-4 col-sm-6 col-12 all mobile_app ul">
 								<div class="gallery-box-layout1">
 									<div class="item-figure">
-										<img src="media/gallery/gallery36.jpg" alt="gallery">
+										<img src="media/gallery/gallery36.jpg" alt="gallery" class="img-fluid mx-auto d-block">
 									</div>
 									<div class="item-content">
 										<div class="item-icon">
@@ -286,7 +286,7 @@ include("sections/header.php");
 							<div class="col-lg-4 col-sm-6 col-12 all mobile_app">
 								<div class="gallery-box-layout1">
 									<div class="item-figure">
-										<img src="media/gallery/gallery37.jpg" alt="gallery">
+										<img src="media/gallery/gallery37.jpg" alt="gallery" class="img-fluid mx-auto d-block">
 									</div>
 									<div class="item-content">
 										<div class="item-icon">
@@ -300,7 +300,7 @@ include("sections/header.php");
 							<div class="col-lg-4 col-sm-6 col-12 all ul">
 								<div class="gallery-box-layout1">
 									<div class="item-figure">
-										<img src="media/gallery/gallery38.jpg" alt="gallery">
+										<img src="media/gallery/gallery38.jpg" alt="gallery" class="img-fluid mx-auto d-block">
 									</div>
 									<div class="item-content">
 										<div class="item-icon">

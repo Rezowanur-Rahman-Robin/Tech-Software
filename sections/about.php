@@ -33,7 +33,7 @@
 							<div class="about-box-layout1">
 								<div class="content-holder has-animation">
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1000">
-										<h2 class="item-title">STRONG HOLD POINTS OF US</h2>
+										<h2 class="item-title">Why Choose us !</h2>
 									</div>
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1300">
 										<h4>What sets us Apart</h4>
@@ -41,17 +41,12 @@
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1600">
 										<ul class="list-item">
 											<li>Strong and Responsive 24x7 Customer service</li>
-											<li>Tailored software maker. Your imagination and our implementation
-												makes it a reality</li>
-											<li>Our service is available in anywhere of the country though internet,
-												offices in convenient locations of the cities. We are also expanding.</li>
-											<li>100% security of information. 100% guarantee of making the
-												deadline in time. 100% compliment</li>
+											<li>Fully transparent with SRS documentation</li>
+											<li>No compromise for best quality & Perfect delivery with best design</li>
+											<li>Your imagination and our implementation make it a reality.</li>
 										</ul>
 									</div>
-									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1900">
-										<a href="about.html" class="btn-fill btn-gradient">Read More<i class="flaticon-next"></i></a>
-									</div>
+									
 								</div>
 							</div>
 						</div>

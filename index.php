@@ -128,15 +128,6 @@ include("sections/testimonial.php");
 
 ?>
 
-		
-
-<?php
-
-include("sections/teamMembers.php");
-
-?>
-
-
 
 <?php
 

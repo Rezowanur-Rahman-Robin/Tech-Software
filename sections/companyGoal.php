@@ -31,7 +31,7 @@
 									</p>
 								</div>
 								<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1300">
-									<a href="about.html" class="mt-4 btn-fill btn-gradient">Read More <i class="flaticon-next"></i></a>
+									<a href="about.php" class="mt-4 btn-fill btn-gradient">Read More <i class="flaticon-next"></i></a>
 								</div>
 							</div>
 						</div>

@@ -187,7 +187,7 @@
   --------------------------------------*/
   if ($.fn.meanmenu) {
     $('nav#dropdown').meanmenu({
-      siteLogo: "<div class='mobile-menu-nav-back'><a class='logo-mobile' href='index.php'><img src='media/we_tech-logo.png' width='50' height='50' alt='logo' class='img-fluid'/></a></div>"
+      siteLogo: "<div class='mobile-menu-nav-back'><a class='logo-mobile' href='index.php'><img src='media/we_tech-logo.png' width='100' height='80' alt='logo' class='img-fluid float-left'/></a></div>"
     });
   }
 

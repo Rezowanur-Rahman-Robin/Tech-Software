@@ -33,8 +33,8 @@
 							<div class="process-box-layout1">
 								<ul class="content-holder">
 									<li>
-										<div class="translate-right-75 transition-150 opacity-animation transition-delay-100">
-											<div class="d-flex align-items-sm-center">
+										<div class="translate-right-75 transition-150 opacity-animation transition-delay-100 mb-4">
+											<div class="d-flex align-items-sm-center process process">
 												<div class="item-icon dodger-blue">
 													<i class="flaticon-list"></i>
 												</div>
@@ -62,8 +62,8 @@
 									<li>
 
 										
-										<div class="translate-left-75 transition-150 opacity-animation transition-delay-1000">
-											<div class="d-flex align-items-sm-center flex-xl-row-reverse">
+										<div class="translate-left-75 transition-150 opacity-animation transition-delay-1000 mb-4">
+											<div class="d-flex align-items-sm-center process flex-xl-row-reverse">
 
 											
 												
@@ -77,7 +77,7 @@
 													<p>Grursus mal suada faci lisis Lorem ipsum the and dolarorit more ametion have to elit. </p>
 												</div>
 
-												<div class="translate-right-75 opacity-animation transition-150 transition-delay-2600">
+												<div class="translate-right-75 opacity-animation transition-150 transition-delay-2600 mb-4">
 													<div class="main-banner-box-layout1">
 														<div class="item-figure">
 															<img  src="media/illustration/illustration14.png" alt="Illustration" style="max-width: 345px; max-height: 200px;">
@@ -92,8 +92,8 @@
 							</svg>
 									</li>
 									<li>
-										<div class="translate-right-75 transition-150 opacity-animation transition-delay-2000">
-											<div class="d-flex align-items-sm-center">
+										<div class="translate-right-75 transition-150 opacity-animation transition-delay-2000 mb-4">
+											<div class="d-flex align-items-sm-center process">
 												<div class="item-icon california">
 													<i class="flaticon-support"></i>
 												</div>
@@ -120,8 +120,8 @@
 									</li>
 
 									<li>
-										<div class="translate-left-75 transition-150 opacity-animation transition-delay-1000">
-											<div class="d-flex align-items-sm-center flex-xl-row-reverse">
+										<div class="translate-left-75 transition-150 opacity-animation transition-delay-1000 mb-4">
+											<div class="d-flex align-items-sm-center process flex-xl-row-reverse">
 												<div class="item-icon sunset-orange">
 													<i class="flaticon-research"></i>
 												</div>
@@ -147,8 +147,8 @@
 
 							</li>
 							<li>
-								<div class="translate-right-75 transition-150 opacity-animation transition-delay-2000">
-									<div class="d-flex align-items-sm-center">
+								<div class="translate-right-75 transition-150 opacity-animation transition-delay-2000 mb-4">
+									<div class="d-flex align-items-sm-center process">
 										<div class="item-icon california">
 											<i class="flaticon-team"></i>
 										</div>

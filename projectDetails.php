@@ -140,8 +140,8 @@ include("sections/header.php");
 					 data-r-x-small-dots="false" data-r-x-medium="1" data-r-x-medium-nav="true" data-r-x-medium-dots="false" data-r-small="1" data-r-small-nav="true" data-r-small-dots="false" data-r-medium="1" data-r-medium-nav="true" data-r-medium-dots="false" data-r-large="1"
 					 data-r-large-nav="true" data-r-large-dots="false" data-r-extra-large="1" data-r-extra-large-nav="true" data-r-extra-large-dots="false">
                      
-                     <img src="media/gallery/gallery91.jpg" alt="gallery">
-                     <img src="media/gallery/prime_edu.png" alt="gallery">
+                     <img src="media/gallery/gallery91.jpg" alt="gallery" class="slider_image">
+                     <img src="media/gallery/prime_edu.png" alt="gallery" class="slider_image">
 					</div>
 					<div class="row">
 						<div class="col-lg-8">

@@ -146,8 +146,8 @@ include("sections/header.php");
 									<div class="item-content">
 										<h3 class="item-title">Email &amp; Phone</h3>
 										<ul class="list-item">
-											<li>wetech.io@aol.com</li>
-											<li><li>+88 01745 968 765</li></li>
+											<li class="list_text">wetech.io@aol.com</li>
+											<li ><li class="list_text">+88 01745 968 765</li></li>
                                             
 										</ul>
 									</div>
@@ -161,9 +161,9 @@ include("sections/header.php");
 									<div class="item-content">
 										<h3 class="item-title">Our Location</h3>
 										<ul class="list-item">
-											<li>HOUSE: 185, ROAD: 19, BLOCK: K, SOUTH BANASREE, DHAKA-1219</li>
-											<li>+88 01745 968 765</li>
-                                            <li>+88 01689 542 929</li>
+											<li class="list_text">HOUSE: 185, ROAD: 19, BLOCK: K, SOUTH BANASREE, DHAKA-1219</li>
+											<li class="list_text">+88 01745 968 765</li>
+                                            <li class="list_text">+88 01689 542 929</li>
 										</ul>
 									</div>
 								</div>
@@ -176,8 +176,8 @@ include("sections/header.php");
 									<div class="item-content">
 										<h3 class="item-title">Get In Touch</h3>
 										<ul class="list-item">
-											<li><a mailto="wetech.io@aol.com">wetech.io@aol.com</a></li>
-											<li>	
+											<li class="list_text"><a mailto="wetech.io@aol.com">wetech.io@aol.com</a></li>
+											<li class="socail_connection list_text">	
                                                 <ul class="footer-social" style="display: flex;
     justify-content: space-between;">
 										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>

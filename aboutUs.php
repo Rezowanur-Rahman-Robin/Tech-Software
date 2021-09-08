@@ -329,7 +329,7 @@
 						<div class="col-xl-6 col-12 pl-0 pr-0">
 							<div class="about-box-layout8">
 								<div class="figure-holder">
-									<img src="media/about/about-back.jpg" alt="About">
+									<img src="media/about/about-back.jpg" class="video_img" alt="About">
 									<a class="play-btn popup-youtube" href="http://www.youtube.com/watch?v=1iIZeIy7TqM">
 										<div class="item-icon"><i class="fas fa-play"></i></div>
 									</a>
@@ -366,7 +366,13 @@
 			<!--=====================================-->
 			<!--=      About Section Area End       =-->
 			<!--=====================================-->
-	
+
+			
+<?php
+
+include("sections/advisors.php");
+
+?>
 
 <?php
 

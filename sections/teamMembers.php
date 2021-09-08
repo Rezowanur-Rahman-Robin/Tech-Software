@@ -15,7 +15,7 @@
 									<div class="maks-item animted-bg-wrap">
 										<span class="animted-bg"></span>
 										<div class="item-figure">
-											<img src="media/team/team1.jpg" alt="Team">
+											<img src="media/team/team1.jpg" alt="Team" class="img-fluid mx-auto d-block">
 										</div>
 										<ul class="social-items">
 											<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -37,7 +37,7 @@
 									<div class="maks-item animted-bg-wrap">
 										<span class="animted-bg"></span>
 										<div class="item-figure">
-											<img src="media/team/team2.jpg" alt="Team">
+											<img src="media/team/team2.jpg" alt="Team" class="img-fluid mx-auto d-block">
 										</div>
 										<ul class="social-items">
 											<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -59,7 +59,7 @@
 									<div class="maks-item animted-bg-wrap">
 										<span class="animted-bg"></span>
 										<div class="item-figure">
-											<img src="media/team/team3.jpg" alt="Team">
+											<img src="media/team/team3.jpg" alt="Team" class="img-fluid mx-auto d-block">
 										</div>
 										<ul class="social-items">
 											<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -81,7 +81,7 @@
 									<div class="maks-item animted-bg-wrap">
 										<span class="animted-bg"></span>
 										<div class="item-figure">
-											<img src="media/team/team4.jpg" alt="Team">
+											<img src="media/team/team4.jpg" alt="Team" class="img-fluid mx-auto d-block">
 										</div>
 										<ul class="social-items">
 											<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -103,7 +103,7 @@
 									<div class="maks-item animted-bg-wrap">
 										<span class="animted-bg"></span>
 										<div class="item-figure">
-											<img src="media/team/team5.jpg" alt="Team">
+											<img src="media/team/team5.jpg" alt="Team" class="img-fluid mx-auto d-block">
 										</div>
 										<ul class="social-items">
 											<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -125,7 +125,7 @@
 									<div class="maks-item animted-bg-wrap">
 										<span class="animted-bg"></span>
 										<div class="item-figure">
-											<img src="media/team/team6.jpg" alt="Team">
+											<img src="media/team/team6.jpg" alt="Team" class="img-fluid mx-auto d-block">
 										</div>
 										<ul class="social-items">
 											<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -147,7 +147,7 @@
 									<div class="maks-item animted-bg-wrap">
 										<span class="animted-bg"></span>
 										<div class="item-figure">
-											<img src="media/team/team7.jpg" alt="Team">
+											<img src="media/team/team7.jpg" alt="Team" class="img-fluid mx-auto d-block">
 										</div>
 										<ul class="social-items">
 											<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -169,7 +169,7 @@
 									<div class="maks-item animted-bg-wrap">
 										<span class="animted-bg"></span>
 										<div class="item-figure">
-											<img src="media/team/team8.jpg" alt="Team">
+											<img src="media/team/team8.jpg" alt="Team" class="img-fluid mx-auto d-block">
 										</div>
 										<ul class="social-items">
 											<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -191,7 +191,7 @@
 									<div class="maks-item animted-bg-wrap">
 										<span class="animted-bg"></span>
 										<div class="item-figure">
-											<img src="media/team/team9.jpg" alt="Team">
+											<img src="media/team/team9.jpg" alt="Team" class="img-fluid mx-auto d-block">
 										</div>
 										<ul class="social-items">
 											<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
