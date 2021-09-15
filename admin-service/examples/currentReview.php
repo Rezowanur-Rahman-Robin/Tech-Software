@@ -1,29 +1,39 @@
+
 <?php
  
  include("../includes/db.php");
-
+ 
 
 
 if(isset($_GET['delete_id'])){
         
   $delete_id = $_GET['delete_id'];
+
+
   
-  $do_update_id= "update food_item set item_gallary_type='' where item_id=$delete_id";
+  $do_delete_id= "delete from reviews where r_id='$delete_id'";
   
-  $run_update = mysqli_query($con,$do_update_id);
+  $run_delete = mysqli_query($con,$do_delete_id);
+
+
   
-  if($run_update){
+
+
+  
+  
+  if($run_delete){
       
       echo "<script>alert('Successfully Deleted!')</script>";
       
-      echo "<script>window.open('foodGallary.php','_self')</script>";
+      echo "<script>window.open('currentReview.php','_self')</script>";
       
 
   }
 
   else{
       echo "<script>alert('Delation Failed!')</script>";
-      echo "<script>window.open('foodGallary.php','_self')</script>";
+      echo "<script>window.open('currentReview.php','_self')</script>";
+
   }
   
 }
@@ -43,12 +53,12 @@ if(!localStorage.getItem('phone')){
 include("../includes/sidebar.php");
 
 ?>
-
-    <div class="main-panel">
+    <div class="main-panel"  style="margin: -0.5rem!important;">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
         <div class="container-fluid">
           <div class="navbar-wrapper">
+            <a class="navbar-brand" href="javascript:void(0)">Review</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation" data-target="#navigation-example">
             <span class="sr-only">Toggle navigation</span>
@@ -56,7 +66,7 @@ include("../includes/sidebar.php");
             <span class="navbar-toggler-icon icon-bar"></span>
             <span class="navbar-toggler-icon icon-bar"></span>
           </button>
-        
+         
         </div>
       </nav>
       <!-- End Navbar -->
@@ -68,117 +78,104 @@ include("../includes/sidebar.php");
         <div class="container-fluid">
           
           <div class="row">
-           
+            <div class="col-md-12">
+            <a href="insertReview.php" class="btn btn-info float-right mb-2 mr-3"> <span class="material-icons mr-1" style=" font-size: 24px;">add_circle</span>Create New Reviews</a>
+            </div>
             <div class="col-md-12">
             
               <div class="card">
                 <div class="card-header card-header-primary">
-                  <h4 class="card-title text-center font-weight-bold">Buffet Gallary</h4>
-                  <p class="card-category text-center"> Here's all the list of buffet gallary.</p>
+                  <h4 class="card-title text-center font-weight-bold">Reviews</h4>
+                  <p class="card-category text-center"> Here's all the list of Project Reviews.</p>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
-                  <table class="table">
+                    <table class="table">
                       <thead class="text-light">
                         <th style="color: white;font-weight: 700;">
                           No
                         </th>
                         <th style="color: white;font-weight: 700;">
-                          Title
-                        </th>
-                        <th style="color: white;font-weight: 700;">
                           Image
                         </th>
                         <th style="color: white;font-weight: 700;">
-                          Description
+                        Name
                         </th>
+                        <th style="color: white;font-weight: 700;">
+                        Profession
+                        </th>
+                        
+                        <th style="color: white;font-weight: 700;">
+                          Review
+                        </th>
+                
                         <th style="color: white;font-weight: 700;">
                           Delete
                         </th>
                       </thead>
                       <tbody>
+
+                      
                       <?php
 
-$get_items = "select * from food_item where item_gallary_type='Buffet'";
+$get_reviews = "select * from reviews";
 
-$run_items = mysqli_query($con,$get_items);
+$run_reviews  = mysqli_query($con,$get_reviews);
 
 $i=0;
 
-while($row_items = mysqli_fetch_array($run_items)){
+while($row_reviews  = mysqli_fetch_array($run_reviews )){
 
-     $item_id = $row_items['item_id'];
+     $r_id = $row_reviews['r_id'];
 
-     $item_title = $row_items['item_title'];
+     $r_name = $row_reviews['r_name'];
 
-     $item_menu = $row_items['item_menu'];
+     $r_img = $row_reviews['r_img'];
 
+     $r_profession = $row_reviews['r_profession'];
 
+     $r_desc = $row_reviews['r_desc'];
 
-     $select_menu = "select * from food_menu where food_menu_id=$item_menu";
-
-     $run_select_menu = mysqli_query($con,$select_menu);
-
-     if($row_select_menu= mysqli_fetch_array($run_select_menu)){
-       $menu_name= $row_select_menu['food_menu_title'];
-     }
-
-
-
-     $item_cat = $row_items['item_cat'];
-     $select_cat = "select * from food_category where food_cat_id=$item_cat";
-
-     $run_select_cat = mysqli_query($con,$select_cat);
-
-     if($row_select_cat= mysqli_fetch_array($run_select_cat)){
-       $cat_name= $row_select_cat['food_cat_title'];
-     }
-
-     $item_price = $row_items['item_price'];
-
-     $item_img = $row_items['item_img'];
-
-     $item_desc = $row_items['item_desc'];
-
-     $item_desc= substr($item_desc,0,100).".....";
-
-     if($row_items['item_gallary_type']!=''){
-      $item_gallary_type = $row_items['item_gallary_type'];
-
-     }else{
-      $item_gallary_type='';
-     }
-
-
-   
      
+
+
 
      $i++;
      
 
-?> 
+?>
                         <tr>
                           <td>
                           <?php echo $i; ?>
-
-                          </td>
-                          <td>
-                          <?php echo $item_title; ?>
-                          </td>
-                          <td>
-                          <img width="90" style="max-height:100px;" src="../../images/item-images/<?php echo $item_img; ?>" alt="">
                           </td>
 
                           <td>
-                          <p><?php echo $item_desc; ?></p>
+                             <img width='80' height='80' src="../../media/reviewer/<?php echo $r_img; ?>" alt="<?php echo $r_name; ?>">
                           </td>
+
+                          <td>
+                          <?php echo $r_name; ?>"
+                          </td>
+
+                          <td>
+                          <?php echo $r_profession; ?>"
+                          </td>
+
+                          <td>
+
+                          <?php
+                            
+                           echo substr($r_desc,0,50);
+                           ?>"
+                          </td>
+
                           <td class="text-primary">
-                          <a href="buffetGallary.php?delete_id=<?php echo $item_id ?>">  <span class="material-icons text-danger">clear</span>  </a>
+                            <a href="currentReview.php?delete_id=<?php echo $r_id ?>">  <span class="material-icons text-danger">clear</span>  </a>
 
                           </td>
                         </tr>
 
-                        <?php } ?>
+  <?php } ?>
                        
                       </tbody>
                     </table>
@@ -526,5 +523,5 @@ view_module
 </body>
 
 
-<!-- Mirrored from demos.creative-tim.com/material-dashboard-dark/examples/menus.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Mar 2021 07:08:54 GMT -->
+<!-- Mirrored from demos.creative-tim.com/material-dashboard-dark/examples/categories.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Mar 2021 07:08:54 GMT -->
 </html>

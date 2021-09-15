@@ -1,19 +1,10 @@
 <?php
- 
- include("../includes/db.php");
 
-
-
-if(isset($_GET['item_id'])){
-        
-  $item_id = $_GET['item_id'];
-  
- 
-  
-}
+include("../includes/db.php");
 
 
 ?>
+
 
 <script>
 if(!localStorage.getItem('phone')){
@@ -22,128 +13,148 @@ if(!localStorage.getItem('phone')){
 
 </script>
 
+   
+
 <?php
 
 include("../includes/sidebar.php");
 
 ?>
-    <div class="main-panel">
+
+
+    <div class="main-panel " style="margin: -0.5rem!important;">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
         <div class="container-fluid">
-          <div class="navbar-wrapper">
-            <a class="navbar-brand" href="javascript:void(0)">Items</a>
-          </div>
+         
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation" data-target="#navigation-example">
             <span class="sr-only">Toggle navigation</span>
             <span class="navbar-toggler-icon icon-bar"></span>
             <span class="navbar-toggler-icon icon-bar"></span>
             <span class="navbar-toggler-icon icon-bar"></span>
           </button>
-          
+        
         </div>
       </nav>
       <!-- End Navbar -->
       <div class="content">
       
   
+ 
 
-        
-      <div class="container-fluid">
-        
-      <form action="" method="post">
-    <div class="form-group">
-      <label  style=" font-weight: 1000;
-    color: white;" for="gallary_type">Select Gallary Type:</label>
-       <div class="form-check" required>
-      <label class="form-check-label" for="radio1">
-        <input type="radio"  id="radio1" name="gallary_type"  value="1" >Food 
-      </label>
-    </div>
-    <div class="form-check">
-      <label class="form-check-label" for="radio2">
-        <input type="radio"  id="radio2" name="gallary_type"  value="2">Restaurant
-      </label>
-    </div>
-    <div class="form-check">
-      <label class="form-check-label">
-        <input type="radio" id="radion3" value="3"  name="gallary_type">Buffet
-      </label>
+<form action="" class="form-horizontal" method="post" enctype="multipart/form-data">
+    <div class="form-group"  >
+      <label style=" font-weight: 1000;
+    color: white;" for="r_name">Reviewer Name:</label>
+      <input type="text" class="form-control"  placeholder="Enter Category Title" name="r_name" required>
     </div>
 
-    <div class="form-check">
-      <label class="form-check-label">
-        <input type="radio" id="radion4" value="4" name="gallary_type">Special
-      </label>
-    </div>
+  
 
-    <div class="form-check">
-      <label class="form-check-label">
-        <input type="radio" id="radion4"  value="5" name="gallary_type">None
-      </label>
-    </div>
-
-    </div>
-   
-    <input type="submit" name="type_submit" class="btn btn-primary"/>
-  </form>
-
-
-  <?php
-    
-    if(isset($_POST['type_submit'])){
-      $gallary_type = $_POST['gallary_type'];
-
-
-      if($gallary_type == "1"){
-          $type="Food";
-      }else if ($gallary_type == "2"){
-        $type= "Restaurant";
-
-      }else if ($gallary_type == "3"){
-        $type= "Buffet";
-
-      }else if ($gallary_type == "4"){
-        $type= "Special";
-
-      }else{
-        $type= "";
-      }
-    
-
-
-    
-      $insert_type = "update food_item set item_gallary_type ='$type'  where item_id = '$item_id' ";
-      $run_type =mysqli_query($con,$insert_type);
-    
-      if($run_type){
-        echo "<script>alert('Your Gallary Type Insertion  successfully Done!')</script>";
-       
-        
-        echo "<script>window.open('items.php','_self')</script>";
-        
-    }
-    else
-    {
-      echo "<script>alert('Your Gallary Type Insertion Failed!')</script>";
-        
-    }
-    
-    } 
+    <div class="input-group mb-3">
+    <div class="row" style="width: 100%;">
+      
+     <div class="col-md-1">
+     <label style=" font-weight: 1000;
+    color: white;" for="r_img">Image:</label>
+     </div>
+     <div class="col-md-11">
+     <div class="custom-file">
      
-     ?>
-
-
+    <input style="display: block;
+    width: 100%;
+    background: white;
+    border-radius: 9px;
+    padding: 4px;"  class="ml-2" name="r_img" type="file" required>
+  
   </div>
 
+</div>
 
-    </div>
+</div>
+</div>
+
+
+<div class="form-group"  >
+      <label style=" font-weight: 1000;
+    color: white;" for="r_pro">Reviewer Profession:</label>
+      <input type="text" class="form-control"  placeholder="Enter Reviewer Profession" name="r_pro" required>
+</div>
+
+<label style=" font-weight: 1000;color: white;" >Review </label> 
+
+    <div class="form-group"><!-- form-group Begin -->
+                       
+                      
+                       
+                    
+                           <div class="mt-2">
+                           <textarea id="mytextarea" name="r_desc"  placeholder="Enter the review" class=""></textarea>
+
+                           </div>
+                         
+
+
+                       
+                        
+    </div><!-- form-group Finish -->
+
+
+   
+    <input type="submit" value="Submit" name="submit" class="btn btn-primary"/>
+</form>
+
+
+
+
+        <?php
+        if(isset($_POST['submit'])){
+          $r_name = $_POST['r_name'];
+          
+          $r_pro = $_POST['r_pro'];
+
+          $r_desc = $_POST['r_desc'];
+
+          $r_image = $_FILES['r_img']['name'];
+
+          $temp_name =$_FILES['r_img']['tmp_name'];
+
+          move_uploaded_file($temp_name,"../../media/reviewer/$r_image");
+
+
+
+
+          $insert_review = "insert into reviews (r_name,r_img,r_profession,r_desc)
+           values ('$r_name','$r_image','$r_pro','$r_desc') ";
+          $run_review =mysqli_query($con,$insert_review);
+
+          if($run_review){
+                  
+            echo "<script>alert('Your New Review Has Been Inserted Successfuly')</script>";
+            
+        }
+        else
+        {
+          echo "<script>alert('Your New Review Insertion Failed!')</script>";
+            
+        }
+
+        }  
+    
+        ?>
+
+
+
+   
+      </div>
+
+
       <footer class="footer">
         <div class="container-fluid">
           
           <div class="copyright float-right" id="date">
             , made with <i class="material-icons">favorite</i> by
-            <a href="#" target="_blank">RobTechBD Limited</a> for a better web.
+            <a href="#" target="_blank">Robin</a> for a better web.
           </div>
         </div>
       </footer>
@@ -202,6 +213,7 @@ view_module
     </div>
   </div>
   <!--   Core JS Files   -->
+
   <script src="../assets/js/core/jquery.min.js"></script>
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap-material-design.min.js"></script>
@@ -219,12 +231,23 @@ view_module
   <script src="../assets/js/material-dashboard.minf066.js?v=2.1.0"></script>
   <!-- Material Dashboard DEMO methods, don't include it in your project! -->
   <script src="../assets/demo/demo.js"></script>
- 
+  <script>
+  
+  </script>
   <noscript>
     <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=111649226022273&amp;ev=PageView&amp;noscript=1" />
   </noscript>
 </body>
 
 
-<!-- Mirrored from demos.creative-tim.com/material-dashboard-dark/examples/items.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Mar 2021 07:08:54 GMT -->
 </html>
+
+
+
+
+
+
+
+
+
+ 

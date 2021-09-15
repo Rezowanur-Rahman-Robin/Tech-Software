@@ -9,7 +9,7 @@ if(isset($_GET['delete_id'])){
         
   $delete_id = $_GET['delete_id'];
   
-  $do_delete_id= "delete from food_category where food_cat_id='$delete_id'";
+  $do_delete_id= "delete from category where cat_id='$delete_id'";
   
   $run_delete = mysqli_query($con,$do_delete_id);
   
@@ -17,14 +17,14 @@ if(isset($_GET['delete_id'])){
       
       echo "<script>alert('Successfully Deleted!')</script>";
       
-      echo "<script>window.open('categories.php','_self')</script>";
+      echo "<script>window.open('currentCategory.php','_self')</script>";
       
 
   }
 
   else{
       echo "<script>alert('Delation Failed!')</script>";
-      echo "<script>window.open('categories.php','_self')</script>";
+      echo "<script>window.open('currentCategory.php','_self')</script>";
 
   }
   
@@ -45,8 +45,7 @@ if(!localStorage.getItem('phone')){
 include("../includes/sidebar.php");
 
 ?>
-
-    <div class="main-panel">
+    <div class="main-panel"  style="margin: -0.5rem!important;">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
         <div class="container-fluid">
@@ -72,14 +71,14 @@ include("../includes/sidebar.php");
           
           <div class="row">
             <div class="col-md-12">
-            <a href="create.php?type=categories" class="btn btn-info float-right mb-2 mr-3"> <span class="material-icons mr-1" style=" font-size: 24px;">add_circle</span>Create New Categories</a>
+            <a href="insertCategory.php" class="btn btn-info float-right mb-2 mr-3"> <span class="material-icons mr-1" style=" font-size: 24px;">add_circle</span>Create New Categories</a>
             </div>
             <div class="col-md-12">
             
               <div class="card">
                 <div class="card-header card-header-primary">
-                  <h4 class="card-title text-center font-weight-bold">Food Categories</h4>
-                  <p class="card-category text-center"> Here's all the list of food categories.</p>
+                  <h4 class="card-title text-center font-weight-bold">Project Categories</h4>
+                  <p class="card-category text-center"> Here's all the list of Project categories.</p>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
@@ -92,7 +91,7 @@ include("../includes/sidebar.php");
                           Title
                         </th>
                         <th style="color: white;font-weight: 700;">
-                          Total Items
+                          Total Project
                         </th>
                         <th style="color: white;font-weight: 700;">
                           Update
@@ -106,7 +105,7 @@ include("../includes/sidebar.php");
                       
                       <?php
 
-$get_categories = "select * from food_category";
+$get_categories = "select * from category";
 
 $run_categories = mysqli_query($con,$get_categories);
 
@@ -114,16 +113,16 @@ $i=0;
 
 while($row_categories = mysqli_fetch_array($run_categories)){
 
-     $cat_id = $row_categories['food_cat_id'];
+     $cat_id = $row_categories['cat_id'];
 
-     $cat_title = $row_categories['food_cat_title'];
+     $cat_title = $row_categories['cat_title'];
 
    
-     $get_count_item = "select * from food_item where item_cat=$cat_id";
+    //  $get_count_item = "select * from projects where item_cat=$cat_id";
      
-     $run_count_item = mysqli_query($con,$get_count_item);
+    //  $run_count_item = mysqli_query($con,$get_count_item);
 
-     $count_item= mysqli_num_rows($run_count_item);
+    //  $count_item= mysqli_num_rows($run_count_item);
 
      $i++;
      
@@ -137,13 +136,13 @@ while($row_categories = mysqli_fetch_array($run_categories)){
                           <?php echo $cat_title; ?>
                           </td>
                           <td>
-                          <?php echo $count_item; ?>
+                          <?php echo "10"; ?>
                           </td>
                           <td>
-                            <a href="edit.php?type=categories&&category_id=<?php echo $cat_id ;?>">  <span class="material-icons text-success">border_color</span></a>
+                            <a href="editCategory.php?category_id=<?php echo $cat_id ;?>">  <span class="material-icons text-success">border_color</span></a>
                           </td>
                           <td class="text-primary">
-                            <a href="categories.php?delete_id=<?php echo $cat_id ?>">  <span class="material-icons text-danger">clear</span>  </a>
+                            <a href="currentCategory.php?delete_id=<?php echo $cat_id ?>">  <span class="material-icons text-danger">clear</span>  </a>
 
                           </td>
                         </tr>
