@@ -70,7 +70,7 @@ include("../includes/sidebar.php");
         
         <div class="row">
           <div class="col-md-12">
-          <a href="create.php?type=admins" class="btn btn-info float-right mb-2 mr-3 mt-3"><span class="material-icons mr-1" style=" font-size: 24px;">add_circle</span>Create New Admin</a>
+          <a href="insertAdmin.php" class="btn btn-info float-right mb-2 mr-3 mt-3"><span class="material-icons mr-1" style=" font-size: 24px;">add_circle</span>Create New Admin</a>
           </div>
           <div class="col-md-12">
           
@@ -143,7 +143,7 @@ while($row_admins = mysqli_fetch_array($run_admins)){
                         </td>
 
                         <td>
-                        <img width="70px"  src="../../images/other-images/<?php echo $admin_image; ?> " alt="">
+                        <img width="70px" height="70px"  src="../../media/admin/<?php echo $admin_image; ?>" alt="">
 
                         </td>
                        

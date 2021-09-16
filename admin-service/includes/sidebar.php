@@ -27,8 +27,12 @@
 
 <script>
   tinymce.init({
-    selector: '#mytextarea',
-    mode:'standard'
+    selector: 'textarea',
+    plugins: [
+             'advlist image autolink lists link  charmap print preview anchor',
+             'searchreplace visualblocks code fullscreen',
+             'insertdatetime media table paste code help wordcount'
+           ],
     
  });
 </script>
@@ -57,7 +61,7 @@
 
 </head>
 
-<body class="dark-edition">
+<body class="dark-edition" >
 
 
   <!-- Extra details for Live View on GitHub Pages -->
@@ -238,17 +242,39 @@
            </ul><!-- collapse finish -->
            
        </li><!-- li finish -->
-         
 
-          <li class="nav-item ">
-            <a class="nav-link" href="slider.php">
-              <i class="material-icons">
+       <li class="nav-item "><!-- li begin -->
+           
+           <a class="nav-link" href="#" data-toggle="collapse" data-target="#jobs"><!-- a href begin -->
+                   
+           <i class="material-icons">
                 settings_ethernet
                 </i>
-              <p>Slider</p>
-            </a>
-          </li>
          
+             
+             <p>Jobs <span class="material-icons">
+               arrow_drop_down
+               </span>
+             </p>
+             
+                   <i class="fa fa-fw fa-caret-down"></i>
+                   
+           </a><!-- a href finish -->
+           
+           <ul id="jobs" class="collapse"><!-- collapse begin -->
+               <li><!-- li begin -->
+                   <a href="currentJob.php" class="nav-link"> Current Jobs </a>
+               </li><!-- li finish -->
+               <li><!-- li begin -->
+                   <a href="insertJob.php" class="nav-link"> Insert Job </a>
+               </li><!-- li finish -->
+           
+           </ul><!-- collapse finish -->
+           
+       </li><!-- li finish -->
+         
+
+  
 
 
 

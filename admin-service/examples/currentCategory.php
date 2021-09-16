@@ -71,7 +71,7 @@ include("../includes/sidebar.php");
           
           <div class="row">
             <div class="col-md-12">
-            <a href="insertCategory.php" class="btn btn-info float-right mb-2 mr-3"> <span class="material-icons mr-1" style=" font-size: 24px;">add_circle</span>Create New Categories</a>
+            <a href="insertCategory.php" class="btn btn-info float-right mb-2 mr-3"> <span class="material-icons mr-1" style=" font-size: 24px;">add_circle</span>Create New Category</a>
             </div>
             <div class="col-md-12">
             

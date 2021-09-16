@@ -11,7 +11,7 @@ if(isset($_GET['delete_id'])){
 
 
   
-  $do_delete_id= "delete from reviews where r_id='$delete_id'";
+  $do_delete_id= "delete from careers where career_id='$delete_id'";
   
   $run_delete = mysqli_query($con,$do_delete_id);
 
@@ -25,14 +25,14 @@ if(isset($_GET['delete_id'])){
       
       echo "<script>alert('Successfully Deleted!')</script>";
       
-      echo "<script>window.open('currentReview.php','_self')</script>";
+      echo "<script>window.open('currentJob.php','_self')</script>";
       
 
   }
 
   else{
       echo "<script>alert('Delation Failed!')</script>";
-      echo "<script>window.open('currentReview.php','_self')</script>";
+      echo "<script>window.open('currentJob.php','_self')</script>";
 
   }
   
@@ -58,7 +58,7 @@ include("../includes/sidebar.php");
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand" href="javascript:void(0)">Review</a>
+            <a class="navbar-brand" href="javascript:void(0)">JObs</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation" data-target="#navigation-example">
             <span class="sr-only">Toggle navigation</span>
@@ -76,14 +76,14 @@ include("../includes/sidebar.php");
           
           <div class="row">
             <div class="col-md-12">
-            <a href="insertReview.php" class="btn btn-info float-right mb-2 mr-3"> <span class="material-icons mr-1" style=" font-size: 24px;">add_circle</span>Create New Reviews</a>
+            <a href="insertJob.php" class="btn btn-info float-right mb-2 mr-3"> <span class="material-icons mr-1" style=" font-size: 24px;">add_circle</span>Create New Job</a>
             </div>
             <div class="col-md-12">
             
               <div class="card">
                 <div class="card-header card-header-primary">
-                  <h4 class="card-title text-center font-weight-bold">Reviews</h4>
-                  <p class="card-category text-center"> Here's all the list of Project Reviews.</p>
+                  <h4 class="card-title text-center font-weight-bold">Jobs</h4>
+                  <p class="card-category text-center"> Here's all the list all the current openings</p>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
@@ -93,17 +93,13 @@ include("../includes/sidebar.php");
                           No
                         </th>
                         <th style="color: white;font-weight: 700;">
-                          Image
+                          Position
                         </th>
                         <th style="color: white;font-weight: 700;">
-                        Name
+                        Stack
                         </th>
                         <th style="color: white;font-weight: 700;">
-                        Profession
-                        </th>
-                        
-                        <th style="color: white;font-weight: 700;">
-                          Review
+                        Edit 
                         </th>
                 
                         <th style="color: white;font-weight: 700;">
@@ -115,23 +111,27 @@ include("../includes/sidebar.php");
                       
                       <?php
 
-$get_reviews = "select * from reviews";
+$get_careers = "select * from careers";
 
-$run_reviews  = mysqli_query($con,$get_reviews);
+$run_careers  = mysqli_query($con,$get_careers);
 
 $i=0;
 
-while($row_reviews  = mysqli_fetch_array($run_reviews )){
+while($row_careers  = mysqli_fetch_array($run_careers )){
 
-     $r_id = $row_reviews['r_id'];
+     $career_id = $row_careers['career_id'];
 
-     $r_name = $row_reviews['r_name'];
+     $career_language = $row_careers['career_language'];
 
-     $r_img = $row_reviews['r_img'];
+     $career_title = $row_careers['career_title'];
 
-     $r_profession = $row_reviews['r_profession'];
+     $career_duties = $row_careers['career_duties'];
 
-     $r_desc = $row_reviews['r_desc'];
+     $career_educational = $row_careers['career_educational'];
+
+     $career_qualification = $row_careers['career_qualification'];
+
+     $career_app_ins = $row_careers['career_app_ins'];
 
      
 
@@ -146,28 +146,23 @@ while($row_reviews  = mysqli_fetch_array($run_reviews )){
                           <?php echo $i; ?>
                           </td>
 
+
                           <td>
-                             <img width='80' height='80' src="../../media/reviewer/<?php echo $r_img; ?>" alt="<?php echo $r_name; ?>">
+                          <?php echo $career_title; ?>"
                           </td>
 
                           <td>
-                          <?php echo $r_name; ?>"
+                          <?php echo $career_language; ?>"
                           </td>
 
-                          <td>
-                          <?php echo $r_profession; ?>"
-                          </td>
 
-                          <td>
+                          <td class="text-primary">
+                            <a href="editJob.php?career_id=<?php echo $career_id ?>"> <span class="material-icons text-success">border_color</span>  </a>
 
-                          <?php
-                            
-                           echo substr($r_desc,0,50);
-                           ?>"
                           </td>
 
                           <td class="text-primary">
-                            <a href="currentReview.php?delete_id=<?php echo $r_id ?>">  <span class="material-icons text-danger">clear</span>  </a>
+                            <a href="currentJob.php?delete_id=<?php echo $career_id ?>">  <span class="material-icons text-danger">clear</span>  </a>
 
                           </td>
                         </tr>
@@ -189,7 +184,7 @@ while($row_reviews  = mysqli_fetch_array($run_reviews )){
           
           <div class="copyright float-right" id="date">
             , made with <i class="material-icons">favorite</i> by
-            <a href="#" target="_blank">RobTechBD Limited</a> for a better web.
+            <a href="#" target="_blank"> Robin</a> for a better web.
           </div>
         </div>
       </footer>
