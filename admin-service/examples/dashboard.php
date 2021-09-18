@@ -47,36 +47,36 @@ if(!localStorage.getItem('phone')){
          
           <div class="row">
           <?php
-          $get_count_menus = "select * from food_menu";
+          $get_count_projects = "select * from projects";
      
-          $run_count_menus = mysqli_query($con,$get_count_menus);
+          $run_count_projects = mysqli_query($con,$get_count_projects);
      
-          $count_item_menus= mysqli_num_rows($run_count_menus);
+          $count_item_projects= mysqli_num_rows($run_count_projects);
 
 
 
-          $get_count_categories = "select * from food_category";
+          $get_count_careers = "select * from careers";
      
-          $run_count_categories = mysqli_query($con,$get_count_categories);
+          $run_count_careers = mysqli_query($con,$get_count_careers);
      
-          $count_item_categories= mysqli_num_rows($run_count_categories);
+          $count_item_careers= mysqli_num_rows($run_count_careers);
 
 
 
           
-     $get_count_item = "select * from food_item";
+     $get_count_teams = "select * from teams";
      
-     $run_count_item = mysqli_query($con,$get_count_item);
+     $run_count_teams = mysqli_query($con,$get_count_teams);
 
-     $count_item_item= mysqli_num_rows($run_count_item);
+     $count_item_teams= mysqli_num_rows($run_count_teams);
 
 
 
-     $get_count_slider = "select * from slider";
+     $get_count_category = "select * from category";
      
-     $run_count_slider = mysqli_query($con,$get_count_slider);
+     $run_count_category = mysqli_query($con,$get_count_category);
 
-     $count_item_slider= mysqli_num_rows($run_count_slider);
+     $count_item_category= mysqli_num_rows($run_count_category);
 
           
           ?>
@@ -90,16 +90,16 @@ if(!localStorage.getItem('phone')){
                       </span>
                   </div>
 
-                  <p class="card-category">Total Food Menus</p>
+                  <p class="card-category">Total Projects</p>
                   <h3 class="card-title text-light"> 
-                  <?php echo $count_item_menus; ?>
+                  <?php echo $count_item_projects; ?>
 
                   </h3>
                 </div>
                 <div class="card-footer">
                  
               
-                    <a href="menus.php"  class="btn btn-warning  btn-block ">View Details</a>
+                    <a href="currentProject.php"  class="btn btn-warning  btn-block ">View Details</a>
                  
                 </div>
               </div>
@@ -112,13 +112,13 @@ if(!localStorage.getItem('phone')){
                       chrome_reader_mode
                       </span>
                   </div>
-                  <p class="card-category">Food Categories</p>
+                  <p class="card-category">Total Categories</p>
                   <h3 class="card-title text-light">
-                  <?php echo $count_item_categories; ?>
+                  <?php echo $count_item_category; ?>
 
                 </div>
                 <div class="card-footer">
-                  <a href="categories.php"  class="btn btn-success  btn-block ">View Details</a>
+                  <a href="currentCategory.php"  class="btn btn-success  btn-block ">View Details</a>
                 </div>
               </div>
             </div>
@@ -130,17 +130,17 @@ if(!localStorage.getItem('phone')){
                       vertical_split
                       </span>
                   </div>
-                  <p class="card-category">Total Food Items</p>
+                  <p class="card-category">Current Jobs</p>
                   <h3 class="card-title text-light">
                   
-                  <?php echo $count_item_item; ?>
+                  <?php echo $count_item_careers; ?>
 
                   </h3>
                 </div>
                 <div class="card-footer">
                  
               
-                    <a  href="items.php" class="btn btn-danger  btn-block ">View Details</a>
+                    <a  href="currentJob.php" class="btn btn-danger  btn-block ">View Details</a>
                  
                 </div>
               </div>
@@ -153,89 +153,74 @@ if(!localStorage.getItem('phone')){
                       input
                       </span>
                   </div>
-                  <p class="card-category">Slider Images</p>
+                  <p class="card-category">Team Members</p>
                   <h3 class="card-title text-light">
 
                   
-                  <?php echo $count_item_slider; ?>
+                  <?php echo $count_item_teams; ?>
 
                   </h3>
                 </div>
                 <div class="card-footer">
-                    <a href="slider.php" class="btn btn-info  btn-block ">View Details</a>                
+                    <a href="currentTeam.php" class="btn btn-info  btn-block ">View Details</a>                
                 </div>
               </div>
             </div>
           <div class="row">
-            <div class="col-lg-6 col-md-12">
+            <div class="col-10" style="margin: 0 auto;">
               <div class="card">
                 <div class="card-header card-header-primary">
-                  <h4 class="card-title">Special Items</h4>
-                  <p class="card-category">Latest 5 Special Items </p>
+                  <h4 class="card-title">Our Works</h4>
+                  <p class="card-category">Latest 3 Projects </p>
                 </div>
                 <div class="card-body table-responsive">
                   <table class="table table-hover">
                     <thead class="text-warning">
                       
-                      <th>Title</th>
-                      <th>Description</th>
-                      <th>  Image
+                      <th style="color: #ffffff;font-weight: 600;">Project Title</th>
+                      <th style="color: #ffffff;font-weight: 600;">Project Banner Photo</th>
+                      <th style="color: #ffffff;font-weight: 600;"> Category
                       </th>
                     </thead>
                     <tbody>
-                      <tr>
+                      
 
                       <?php
 
-$get_items = "select * from food_item where item_gallary_type='Food' order by item_id desc LIMIT 5 ";
+$get_projects = "select * from projects order by p_id desc LIMIT 3 ";
 
-$run_items = mysqli_query($con,$get_items);
+$run_projects = mysqli_query($con,$get_projects);
 
 $i=0;
 
-while($row_items = mysqli_fetch_array($run_items)){
+while($row_projects = mysqli_fetch_array($run_projects)){
 
-     $item_id = $row_items['item_id'];
+     $p_id = $row_projects['p_id'];
 
-     $item_title = $row_items['item_title'];
+     $p_title = $row_projects['p_title'];
 
-     $item_menu = $row_items['item_menu'];
-
-
-
-     $select_menu = "select * from food_menu where food_menu_id=$item_menu";
-
-     $run_select_menu = mysqli_query($con,$select_menu);
-
-     if($row_select_menu= mysqli_fetch_array($run_select_menu)){
-       $menu_name= $row_select_menu['food_menu_title'];
-     }
+     $p_category_id = $row_projects['p_category'];
 
 
 
-     $item_cat = $row_items['item_cat'];
-     $select_cat = "select * from food_category where food_cat_id=$item_cat";
 
-     $run_select_cat = mysqli_query($con,$select_cat);
+     $get_category = "select * from category where cat_id='$p_category_id' ";
 
-     if($row_select_cat= mysqli_fetch_array($run_select_cat)){
-       $cat_name= $row_select_cat['food_cat_title'];
-     }
+     $run_category   = mysqli_query($con,$get_category);
+ 
+     if($row_category = mysqli_fetch_array($run_category)){
+         $cat_title = $row_category['cat_title'];
+    
 
-     $item_price = $row_items['item_price'];
+     $get_photo = "select * from pro_details_slider where p_project_id='$p_id' LIMIT 1 ";
 
-     $item_img = $row_items['item_img'];
+    $run_photo  = mysqli_query($con,$get_photo);
 
-     $item_desc = $row_items['item_desc'];
+    if($row_photo = mysqli_fetch_array($run_photo)){
+        $p_d_img = $row_photo['p_d_img'];
+    
 
-     $item_desc= substr($item_desc,0,100).".....";
 
-     if($row_items['item_gallary_type']!=''){
-      $item_gallary_type = $row_items['item_gallary_type'];
-
-     }else{
-      $item_gallary_type='';
-     }
 
 
    
@@ -245,240 +230,34 @@ while($row_items = mysqli_fetch_array($run_items)){
      
 
 ?> 
-                       
+                       <tr>
                         <td>
-                        <?php echo $item_title; ?>
+                        <?php echo $p_title; ?>
                        </td>
-                        <td>
-                        
-                        <?php echo $item_desc; ?>
-                        </td>
+                       
+
                         <td>
 
-                          <img width="90" style="max-height:100px;" src="../../images/item-images/<?php echo $item_img; ?>" alt="">
+                          <img  style="width:60%" src="../../media/project/<?php echo $p_d_img; ?>" >
                         
                         </td>
+
+                        <td>
+                        <?php echo $cat_title; ?>
+                        </td>
+                        
                       </tr>
-                      <?php } ?>
+                      <?php } } } ?>
 
                         
                       
                     </tbody>
                   </table>
-                  <a href="specialGallary.php" type="button" class="btn btn-block btn-primary">View More</a>
+                  <a href="currentProject.php" type="button" class="btn btn-block btn-primary">View More</a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-12">
-              <div class="card">
-                <div class="card-header card-header-tabs card-header-warning">
-                  <div class="nav-tabs-navigation">
-                    <div class="nav-tabs-wrapper">
-                      <span class="nav-tabs-title">List:</span>
-                      <ul class="nav nav-tabs" data-tabs="tabs">
-                        <li class="nav-item">
-                          <a class="nav-link active" href="#profile" data-toggle="tab">
-                            Food Menus
-                            <div class="ripple-container"></div>
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#messages" data-toggle="tab">
-                            Food Categories
-                            <div class="ripple-container"></div>
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#settings" data-toggle="tab">
-                            Food Items
-                            <div class="ripple-container"></div>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="tab-content">
-                    <div class="tab-pane active" id="profile">
-                      <table class="table table-hover">
-                        <thead class="text-warning">
-                          
-                          <th>No</th>
-                          <th>Title</th>
-                          <th>Total Items</th>
-                        </thead>
-                        <tbody>
-
-                        <?php
-
-$get_menus = "select * from food_menu order by food_menu_id limit 5";
-
-$run_menus = mysqli_query($con,$get_menus);
-
-$i=0;
-
-while($row_menus = mysqli_fetch_array($run_menus)){
-
-     $menu_id = $row_menus['food_menu_id'];
-
-     $menu_title = $row_menus['food_menu_title'];
-
-   
-     $get_count_item = "select * from food_item where item_menu=$menu_id";
-     
-     $run_count_item = mysqli_query($con,$get_count_item);
-
-     $count_item= mysqli_num_rows($run_count_item);
-
-     $i++;
-     
-
-?>
-                          <tr>
-                           
-                            <td>
-                            <?php echo $i; ?>
-                            </td>
-                            <td>
-                            <?php echo $menu_title; ?>
-
-                             </td>
-                            <td>                        
-                              <?php echo $count_item; ?>
-                           </td>
-                          </tr>
-                        
-  <?php } ?>
-
-                        </tbody>
-                      </table>
-                      <a href="menus.php" type="button" class="btn btn-block btn-warning">View More</a>
-                    </div>
-                    <div class="tab-pane" id="messages">
-                      <table class="table table-hover">
-                        <thead class="text-warning">
-                          
-                          <th>No</th>
-                          <th>Title</th>
-                          <th>Total Items</th>
-                        </thead>
-                        <tbody>
-
-                                           
-                      <?php
-
-$get_categories = "select * from food_category limit 5";
-
-$run_categories = mysqli_query($con,$get_categories);
-
-$i=0;
-
-while($row_categories = mysqli_fetch_array($run_categories)){
-
-     $cat_id = $row_categories['food_cat_id'];
-
-     $cat_title = $row_categories['food_cat_title'];
-
-   
-     $get_count_item = "select * from food_item where item_cat=$cat_id";
-     
-     $run_count_item = mysqli_query($con,$get_count_item);
-
-     $count_item= mysqli_num_rows($run_count_item);
-
-     $i++;
-     
-
-?>
-                          <tr>
-                           
-                            <td>
-                            <?php echo $i; ?>
-                            </td>
-                            <td>    
-                             <?php echo $cat_title; ?>
-                           </td>
-                            <td>
-                            <?php echo $count_item; ?>
-                            </td>
-                          </tr>
-
-                          <?php } ?>
-
-                         
-                         
-                        </tbody>
-                      </table>
-                      <button href="categories.php" type="button" class="btn btn-block btn-warning">View More</button>
-                    </div>
-                    <div class="tab-pane" id="settings">
-                      <table class="table table-hover">
-                        <thead class="text-warning">
-                          
-                          <th>Title</th>
-                          <th>Category</th>
-                          <th>Price</th>
-                        </thead>
-                        <tbody>
-
-                        <?php
-
-$get_items = "select * from food_item limit 5";
-
-$run_items = mysqli_query($con,$get_items);
-
-$i=0;
-
-while($row_items = mysqli_fetch_array($run_items)){
-
-     $item_id = $row_items['item_id'];
-
-     $item_title = $row_items['item_title'];
-
-     $item_cat = $row_items['item_cat'];
-     $select_cat = "select * from food_category where food_cat_id=$item_cat";
-
-     $run_select_cat = mysqli_query($con,$select_cat);
-
-     if($row_select_cat= mysqli_fetch_array($run_select_cat)){
-       $cat_name= $row_select_cat['food_cat_title'];
-     }
-     else{
-      $cat_name='';
-     }
-    
-     $item_price = $row_items['item_price'];
-
-   
-     
-
-     $i++;
-     
-
-?> 
-                          <tr>
-                           
-                            <td><?php echo $item_title;?></td>
-                            <td><?php echo $cat_name;?> </td>
-                            <td><?php echo $item_price;?>Tk</td>
-                          </tr>
-
-                          <?php } ?>
-
-                          
-                        </tbody>
-
-                      
-                       
-                      </table>
-
-                      <a href="items.php" type="button" class="btn btn-block btn-warning">View More</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+      
           </div>
         </div>
       </div>
@@ -487,7 +266,7 @@ while($row_items = mysqli_fetch_array($run_items)){
           
           <div class="copyright float-right" id="date">
             , made with <i class="material-icons">favorite</i> by
-            <a href="#" target="_blank">RobTechBD Limited</a> for a better web.
+            <a href="#" target="_blank"> Robin</a> for a better web.
           </div>
         </div>
       </footer>
@@ -550,7 +329,6 @@ view_module
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap-material-design.min.js"></script>
   <script src="https://unpkg.com/default-passive-events"></script>
-  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async defer src="../../../buttons.github.io/buttons.js"></script>
   <!--  Google Maps Plugin    -->
@@ -822,6 +600,39 @@ view_module
 
     });
   </script>
+  <script>
+  var sidebar= document.querySelector(".sidebar");
+  document.querySelector(".navbar-toggler").addEventListener("click", myFunction);
+  let test=1;
+
+  function myFunction() {
+
+  if (test === 1) {
+    sidebar.style.transform = 'translate3d(0px, 0px, 0px)';
+    test=0;
+
+  } else {
+    sidebar.style.transform = 'translate3d(260px, 0px, 0px)';
+    test=1;
+   
+  }
+}
+
+// if(test === 1){
+//   $(document).click(function(event) { 
+//   var $target = $(event.target);
+//   console.log($target.closest('.sidebar').length)
+//   if(!$target.closest('.sidebar').length && 
+//   sidebar.style.transform == 'translate3d(0px, 0px, 0px)') {
+//     sidebar.style.transform = 'translate3d(260px, 0px, 0px)';
+//     console.log("yes")
+//   }        
+// });
+// }
+
+
+
+</script>
 </body>
 
 

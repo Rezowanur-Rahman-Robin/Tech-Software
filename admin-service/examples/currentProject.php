@@ -11,7 +11,7 @@ if(isset($_GET['delete_id'])){
 
 
   
-  $do_delete_id= "delete from careers where career_id='$delete_id'";
+  $do_delete_id= "delete from projects where p_id='$delete_id'";
   
   $run_delete = mysqli_query($con,$do_delete_id);
 
@@ -25,14 +25,14 @@ if(isset($_GET['delete_id'])){
       
       echo "<script>alert('Successfully Deleted!')</script>";
       
-      echo "<script>window.open('currentJob.php','_self')</script>";
+      echo "<script>window.open('currentProject.php','_self')</script>";
       
 
   }
 
   else{
       echo "<script>alert('Delation Failed!')</script>";
-      echo "<script>window.open('currentJob.php','_self')</script>";
+      echo "<script>window.open('currentProject.php','_self')</script>";
 
   }
   
@@ -76,14 +76,14 @@ include("../includes/sidebar.php");
           
           <div class="row">
             <div class="col-md-12">
-            <a href="insertJob.php" class="btn btn-info float-right mb-2 mr-3"> <span class="material-icons mr-1" style=" font-size: 24px;">add_circle</span>Create New Job</a>
+            <a href="insertProject.php" class="btn btn-info float-right mb-2 mr-3"> <span class="material-icons mr-1" style=" font-size: 24px;">add_circle</span>Create New Project</a>
             </div>
             <div class="col-md-12">
             
               <div class="card">
                 <div class="card-header card-header-primary">
-                  <h4 class="card-title text-center font-weight-bold">Jobs</h4>
-                  <p class="card-category text-center"> Here's all the list all the current openings</p>
+                  <h4 class="card-title text-center font-weight-bold">Projects</h4>
+                  <p class="card-category text-center"> Here's all the list all the projects</p>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
@@ -93,10 +93,10 @@ include("../includes/sidebar.php");
                           No
                         </th>
                         <th style="color: white;font-weight: 700;">
-                          Position
+                          Project Tittle
                         </th>
                         <th style="color: white;font-weight: 700;">
-                        Stack
+                        Project Category
                         </th>
                         <th style="color: white;font-weight: 700;">
                         Edit 
@@ -111,29 +111,31 @@ include("../includes/sidebar.php");
                       
                       <?php
 
-$get_careers = "select * from careers";
+$get_projects = "select * from projects";
 
-$run_careers  = mysqli_query($con,$get_careers);
+$run_projects  = mysqli_query($con,$get_projects);
 
 $i=0;
 
-while($row_careers  = mysqli_fetch_array($run_careers )){
+while($row_project  = mysqli_fetch_array($run_projects )){
 
-     $career_id = $row_careers['career_id'];
+     $p_id = $row_project['p_id'];
 
-     $career_language = $row_careers['career_language'];
+     $p_title = $row_project['p_title'];
 
-     $career_title = $row_careers['career_title'];
+     $p_desc = $row_project['p_desc'];
 
-     $career_duties = $row_careers['career_duties'];
+     $p_category_id = $row_project['p_category'];
 
-     $career_educational = $row_careers['career_educational'];
-
-     $career_qualification = $row_careers['career_qualification'];
-
-     $career_app_ins = $row_careers['career_app_ins'];
 
      
+    $get_category = "select * from category where cat_id='$p_category_id' ";
+
+    $run_category   = mysqli_query($con,$get_category);
+
+    if($row_category = mysqli_fetch_array($run_category)){
+        $cat_title = $row_category['cat_title'];
+    }
 
 
 
@@ -148,21 +150,21 @@ while($row_careers  = mysqli_fetch_array($run_careers )){
 
 
                           <td>
-                          <?php echo $career_title; ?>
+                          <?php echo $p_title; ?>
                           </td>
 
                           <td>
-                          <?php echo $career_language; ?>
+                          <?php echo $cat_title; ?>
                           </td>
 
 
                           <td class="text-primary">
-                            <a href="editJob.php?career_id=<?php echo $career_id ?>"> <span class="material-icons text-success">border_color</span>  </a>
+                            <a href="editProject.php?project_id=<?php echo $p_id ?>"> <span class="material-icons text-success">border_color</span>  </a>
 
                           </td>
 
                           <td class="text-primary">
-                            <a href="currentJob.php?delete_id=<?php echo $career_id ?>">  <span class="material-icons text-danger">clear</span>  </a>
+                            <a href="currentProject.php?delete_id=<?php echo $p_id ?>">  <span class="material-icons text-danger">clear</span>  </a>
 
                           </td>
                         </tr>

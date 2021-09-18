@@ -73,7 +73,7 @@
 
  
  
- <div class="sidebar" data-color="purple" data-background-color="black" data-image="../assets/img/sidebar-2.jpg">
+ <div class="sidebar"  data-color="purple" data-background-color="black" data-image="../assets/img/sidebar-2.jpg">
       <!--
         Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
@@ -216,7 +216,7 @@
 
        <li class="nav-item "><!-- li begin -->
            
-           <a class="nav-link" href="#" data-toggle="collapse" data-target="#clients"><!-- a href begin -->
+           <a class="nav-link" href="" data-toggle="collapse" data-target="#clients"><!-- a href begin -->
                    
            <i class="material-icons">
                 rule

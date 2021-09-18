@@ -151,11 +151,11 @@ while($row_reviews  = mysqli_fetch_array($run_reviews )){
                           </td>
 
                           <td>
-                          <?php echo $r_name; ?>"
+                          <?php echo $r_name; ?>
                           </td>
 
                           <td>
-                          <?php echo $r_profession; ?>"
+                          <?php echo $r_profession; ?>
                           </td>
 
                           <td>
@@ -252,7 +252,6 @@ view_module
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap-material-design.min.js"></script>
   <script src="https://unpkg.com/default-passive-events"></script>
-  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async defer src="../../../buttons.github.io/buttons.js"></script>
   <!--  Google Maps Plugin    -->
@@ -514,6 +513,39 @@ view_module
 
     });
   </script>
+  <script>
+  var sidebar= document.querySelector(".sidebar");
+  document.querySelector(".navbar-toggler").addEventListener("click", myFunction);
+  let test=1;
+
+  function myFunction() {
+
+  if (test === 1) {
+    sidebar.style.transform = 'translate3d(0px, 0px, 0px)';
+    test=0;
+
+  } else {
+    sidebar.style.transform = 'translate3d(260px, 0px, 0px)';
+    test=1;
+   
+  }
+}
+
+// if(test === 1){
+//   $(document).click(function(event) { 
+//   var $target = $(event.target);
+//   console.log($target.closest('.sidebar').length)
+//   if(!$target.closest('.sidebar').length && 
+//   sidebar.style.transform == 'translate3d(0px, 0px, 0px)') {
+//     sidebar.style.transform = 'translate3d(260px, 0px, 0px)';
+//     console.log("yes")
+//   }        
+// });
+// }
+
+
+
+</script>
   <noscript>
     <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=111649226022273&amp;ev=PageView&amp;noscript=1" />
   </noscript>
