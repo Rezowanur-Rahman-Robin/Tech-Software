@@ -18,16 +18,9 @@
 								<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-100">
 									<h3 class="item-title">COMPANY GOALS</h3>
 								</div>
-								<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-500">
-									<div class="sub-title"> Every modern company in the world manages software projects: to run their internal systems; to sell a product or service; or to communicate and collaborate with partners, customers, or vendors. Unfortunately, more than 70% of these projects end up over schedule and/or budget, missing features, or are never released† </div>
-								</div>
+								
 								<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-900">
-									<p>Our vision is to reduce the remarkably high rate of software project failures worldwide, by transforming the way companies manage them.
-										Our mission is to develop a standardized approach, guidance, and tools that help decrease the failure rates of software projects, and encourage companies to adopt these.
-
-
-										We will do this by combining consulting experience and accepted best practices with the latest techniques in data science. We will accelerate and improve project management development and deployment activities by publishing on-demand tools, content, and guidance online.
-										And we will work with partners to build and nurture a global community to achieve this mission.
+									<p>We Tech refers to the particular, day-to-day operational activities that are required to run a firm and that aid in scalability and expansion. Employee and management performance, productivity, profitability, innovation, market share, and social responsibility are all essential organizational goals.
 									</p>
 								</div>
 								<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1300">
@@ -62,24 +55,13 @@
 								<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-100">
 									<h3 class="item-title">PLAN 2</h3>
 								</div>
-								<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-500">
-									<p>Our goal for mobile
-										platform is to bring unique
-										software though which
-										complex works can get
-										easily manageable for
-										everyone, everywhere.</p>
-								</div>
+						
 								<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-900">
-									<ul class="list-layout1">
-										<li>
-											<h4 class="inner-item-title">Reporting & Analysis</h4>
-											<p>Grursus mal suada faci lisis Lorem ipsum dolarorit more that ametion that at consectetur elit.</p>
-										</li>
-										<li>
-											<h4 class="inner-item-title">Reporting & Analysis</h4>
-											<p>Grursus mal suada faci lisis Lorem ipsum dolarorit more that ametion that at consectetur elit.</p>
-										</li>
+								<ul class="list-layout2">
+										<li>Global approval of projects</li>
+										<li>Development with global engineers.</li>
+										<li>Valuing Global Market.</li>
+										<li>Great atmosphere for building career.</li>
 									</ul>
 								</div>
 							</div>
@@ -111,20 +93,13 @@
 								<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-100">
 									<h3 class="item-title">PLAN 1</h3>
 								</div>
-								<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-500">
-									<p>Our goal for computing
-										platform is to work with
-										both networking and
-										mobile platform and
-										ensure a fully updated information
-										ecosystem.</p>
-								</div>
+							
 								<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-900">
 									<ul class="list-layout2">
-										<li>Grursus mal suada Lorem ipsum dolarorit more ametion.</li>
-										<li>Vesti at bulum nec odio aea the dumm ipsumm.</li>
-										<li>Ipsum that dolocons rsus mal suada and fadolorit.</li>
-										<li>Dolocons rsus mal suada and fadolorit to the consectetur elit.</li>
+										<li>Portable development system.</li>
+										<li>Feasible Solution.</li>
+										<li>User Friendly Environment.</li>
+										<li>Flexibility with new updates.</li>
 									</ul>
 								</div>
 							</div>

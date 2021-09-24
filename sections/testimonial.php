@@ -26,15 +26,48 @@
 					<div class="rc-carousel nav-control-layout1" data-loop="true" data-items="3" data-margin="30" data-autoplay="false" data-autoplay-timeout="5000" data-smart-speed="700" data-dots="false" data-nav="true" data-nav-speed="false" data-r-x-small="1" data-r-x-small-nav="true"
 					 data-r-x-small-dots="false" data-r-x-medium="1" data-r-x-medium-nav="true" data-r-x-medium-dots="false" data-r-small="1" data-r-small-nav="true" data-r-small-dots="false" data-r-medium="2" data-r-medium-nav="true" data-r-medium-dots="false" data-r-large="2"
 					 data-r-large-nav="true" data-r-large-dots="false" data-r-extra-large="2" data-r-extra-large-nav="true" data-r-extra-large-dots="false">
-						<div class="testimonial-box-layout3">
+						
+					 <?php
+
+$get_reviews = "select * from reviews";
+
+$run_reviews  = mysqli_query($con,$get_reviews);
+
+$i=0;
+
+while($row_reviews  = mysqli_fetch_array($run_reviews )){
+
+     $r_id = $row_reviews['r_id'];
+
+     $r_name = $row_reviews['r_name'];
+
+     $r_img = $row_reviews['r_img'];
+
+     $r_profession = $row_reviews['r_profession'];
+
+     $r_desc = $row_reviews['r_desc'];
+
+     
+
+     $i++;
+     
+
+?>
+					 
+					 
+					 <div class="testimonial-box-layout3">
 							<div class="media">
-								<img src="media/testimonial/testimonial1.jpg" alt="Testimonial">
+								<img src="media/reviewer/<?php echo $r_img; ?>" alt="Testimonial">
 								<div class="media-body space-sm">
-									<h3 class="item-title">Robert Bruce</h3>
-									<div class="item-designation">Apps Developer</div>
+									<h3 class="item-title"> <?php echo $r_name; ?></h3>
+									<div class="item-designation"> <?php echo $r_profession; ?></div>
 								</div>
 							</div>
-							<p>Grursus mal suada faci lisis Lorem ipsum dolarorit more and dumm ametion consectetur elit. Vesti dolocons rsus mal suada and the fadolorit to is the consectetur elit.</p>
+							<p>                         
+								
+							<?php echo $r_desc; ?>
+                           
+						   </p>
 							<ul class="rating-wrap">
 								<li><i class="fas fa-star"></i></li>
 								<li><i class="fas fa-star"></i></li>
@@ -46,46 +79,9 @@
 								<i class="flaticon-quote"></i>
 							</div>
 						</div>
-						<div class="testimonial-box-layout3">
-							<div class="media">
-								<img src="media/testimonial/testimonial2.jpg" alt="Testimonial">
-								<div class="media-body space-sm">
-									<h3 class="item-title">Kate Kingston</h3>
-									<div class="item-designation">Web Designer</div>
-								</div>
-							</div>
-							<p>Grursus mal suada faci lisis Lorem ipsum dolarorit more and dumm ametion consectetur elit. Vesti dolocons rsus mal suada and the fadolorit to is the consectetur elit.</p>
-							<ul class="rating-wrap">
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-							</ul>
-							<div class="item-icon">
-								<i class="flaticon-quote"></i>
-							</div>
-						</div>
-						<div class="testimonial-box-layout3">
-							<div class="media">
-								<img src="media/testimonial/testimonial1.jpg" alt="Testimonial">
-								<div class="media-body space-sm">
-									<h3 class="item-title">Cassie Ventura</h3>
-									<div class="item-designation">Product Manager</div>
-								</div>
-							</div>
-							<p>Grursus mal suada faci lisis Lorem ipsum dolarorit more and dumm ametion consectetur elit. Vesti dolocons rsus mal suada and the fadolorit to is the consectetur elit.</p>
-							<ul class="rating-wrap">
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-								<li><i class="fas fa-star"></i></li>
-							</ul>
-							<div class="item-icon">
-								<i class="flaticon-quote"></i>
-							</div>
-						</div>
+
+					
+						<?php } ?>
 					</div>
 				</div>
 			</section>

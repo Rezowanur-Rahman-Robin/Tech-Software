@@ -1,3 +1,9 @@
+
+<?php
+ 
+ include("includes/db.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -122,46 +128,46 @@ include("sections/header.php");
 					</div>
 				</div>
 			</section>
+			<?php
 
+if(isset($_GET['career_id'])){
+    
+    $target_c_id = $_GET['career_id'];
+
+	$get_target_career= "select * from careers where career_id='$target_c_id' ";
+	$run_target_career= mysqli_query($con,$get_target_career);
+	
+	if($row_target_career = mysqli_fetch_array($run_target_career)){
+	
+		   $target_career_language= $row_target_career['career_language'];
+	
+		   $target_career_title = $row_target_career['career_title'];
+	
+		   $target_career_duties = $row_target_career['career_duties'];
+	
+		   $target_career_duties = trim(preg_replace('/\s\s+/', ' ', $target_career_duties));
+	  
+		   $target_career_educational = $row_target_career['career_educational'];
+	  
+		   $target_career_qualification = $row_target_career['career_qualification'];
+	  
+		   $target_career_app_ins = $row_target_career['career_app_ins'];
+	  
+	}
+
+ }
+			?>
             <section id="job_desription_section mt-4" style="margin-top:4rem">
                 <div class="container">
-                    <h2 class="text-danger" style="line-height: 5px;">Lead Software Engineer</h2>
-                    <p class='text-primary'>Javascript,React</p>
+                    <h2 class="text-danger" style="line-height: 5px;"><?php echo $target_career_title; ?></h2>
+                    <p class='text-primary'><?php echo $target_career_language; ?></p>
 
                     <div class="details_banner">
                         <h5 class="explanation_h5">Major Duties & Resposibilities</h5>
                     </div>
 
-                    <ol>
-                        <li>
-                        B.Sc or M.Sc in Computer Science/Engineering or equivalent.
-
-                        </li>
-                        <li>
-                        Proven experience of leading a team of software Engineers including performance, development and disciplinary issues.
-
-                        </li>
-
-                        <li>
-                        Must be familiar with any major programming language like C/C++, C#, Java, PHP, etc.
-
-                        </li>
-
-                        <li>
-                        B.Sc or M.Sc in Computer Science/Engineering or equivalent.
-
-                        </li>
-                        <li>
-                        Proven experience of leading a team of software Engineers including performance, development and disciplinary issues.
-
-                        </li>
-
-                        <li>
-                        Must be familiar with any major programming language like C/C++, C#, Java, PHP, etc.
-
-                        </li>
-                    </ol>
-
+                  
+					<?php echo $target_career_duties; ?>
 
 
 
@@ -169,87 +175,20 @@ include("sections/header.php");
                         <h5 class="explanation_h5">Experience Requirements</h5>
                     </div>
 
-                    <ol>
-                        <li>
-                        4+ years of experience in related field.
-
-
-                        </li>
-                        <li>
-                        Proven experience of leading a team of software Engineers including performance, development and disciplinary issues.
-
-                        </li>
-
-
-                        <li>
-                        B.Sc or M.Sc in Computer Science/Engineering or equivalent.
-
-                        </li>
-                     
-                    </ol>
+					<?php echo $target_career_educational; ?>
 
                     <div class="details_banner">
                         <h5 class="explanation_h5">Qualifications & Requirements</h5>
                     </div>
 
-                    <ol>
-                        <li>
-                        B.Sc or M.Sc in Computer Science/Engineering or equivalent.
-
-                        </li>
-                        <li>
-                        Proven experience of leading a team of software Engineers including performance, development and disciplinary issues.
-
-                        </li>
-
-                        <li>
-                        Must be familiar with any major programming language like C/C++, C#, Java, PHP, etc.
-
-                        </li>
-
-                        <li>
-                        B.Sc or M.Sc in Computer Science/Engineering or equivalent.
-
-                        </li>
-                        <li>
-                        Proven experience of leading a team of software Engineers including performance, development and disciplinary issues.
-
-                        </li>
-
-                        <li>
-                        Must be familiar with any major programming language like C/C++, C#, Java, PHP, etc.
-
-                        </li>
-
-                        <li>
-                        B.Sc or M.Sc in Computer Science/Engineering or equivalent.
-
-                        </li>
-                        <li>
-                        Proven experience of leading a team of software Engineers including performance, development and disciplinary issues.
-
-                        </li>
-
-                        <li>
-                        Must be familiar with any major programming language like C/C++, C#, Java, PHP, etc.
-
-                        </li>
-                    </ol>
-
+                    <?php echo $target_career_qualification; ?>
 
                     
                     <div class="details_banner">
                         <h5 class="explanation_h5">Application Instructions</h5>
                     </div>
 
-                    <ol>
-                    If you meet the above requirements, please send us your updated resume to the following  email address:<br> <b>career@wetechbd.com</b>  <br>
-
-Please write in the subject “Application for Project Lead”
-
-Only short listed candidates will be called for interview.
-                      
-                    </ol>
+					<?php echo $target_career_app_ins; ?>
 
                 </div>
             </section>

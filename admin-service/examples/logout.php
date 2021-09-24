@@ -1,5 +1,6 @@
 <script>
 localStorage.removeItem("phone");
+localStorage.removeItem("admin_id");
 
 </script>
 

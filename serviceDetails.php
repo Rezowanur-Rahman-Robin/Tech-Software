@@ -1,3 +1,10 @@
+
+<?php
+ 
+ include("includes/db.php");
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -358,14 +365,11 @@ include("sections/header.php");
                                        
 									</div>
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-600">
-										<h2 class="item-title">Saok Testing</h2>
+										<h2 class="item-title">Soak Testing</h2>
 									</div>
-									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1100">
-										<div class="sub-paragraph">Lorem ipsum dolor sit amet, consectetur a sed eiusmod the tempor incididunt ut labore dummy alom.</div>
-									</div>
+								
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1600">
-										<p>Consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit to consectetur elit. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the
-											first generator on the Internet. It uses a dictionary of over 200 Latin words, That combined with a handful of model sentence generate Lorem the Ipsum which looks reasonable.</p>
+										<p>Soak Testing is a type of non-functional testing that is used to measure performance of a software application under a huge volume of load for an extended period of time. The goal of Soak testing is to ensure whether the software application sustains high volume of usage and to check what would happen outside its design expectations. </p>
 									</div>
 								</div>
 							</div>
@@ -399,9 +403,7 @@ include("sections/header.php");
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-600">
 										<h2 class="item-title">Online communication Application</h2>
 									</div>
-									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1100">
-										<div class="sub-paragraph">Lorem ipsum dolor sit amet, consectetur a sed eiusmod the tempor incididunt ut labore dummy alom.</div>
-									</div>
+								
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1600">
 										<p>Consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit to consectetur elit. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the
 											first generator on the Internet. It uses a dictionary of over 200 Latin words, That combined with a handful of model sentence generate Lorem the Ipsum which looks reasonable.</p>
@@ -436,12 +438,9 @@ include("sections/header.php");
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-600">
 										<h2 class="item-title">Hardware Solution</h2>
 									</div>
-									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1100">
-										<div class="sub-paragraph">Lorem ipsum dolor sit amet, consectetur a sed eiusmod the tempor incididunt ut labore dummy alom.</div>
-									</div>
+								
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1600">
-										<p>Consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit to consectetur elit. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the
-											first generator on the Internet. It uses a dictionary of over 200 Latin words, That combined with a handful of model sentence generate Lorem the Ipsum which looks reasonable.</p>
+										<p>We Tech also consult hardware system for customer’s projects. We give solutions and advise which hardware system will be appropriate to run their projects. </p>
 									</div>
 								</div>
 							</div>
@@ -476,12 +475,9 @@ include("sections/header.php");
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-600">
 										<h2 class="item-title">Computer Software</h2>
 									</div>
-									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1100">
-										<div class="sub-paragraph">Lorem ipsum dolor sit amet, consectetur a sed eiusmod the tempor incididunt ut labore dummy alom.</div>
-									</div>
+								
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1600">
-										<p>Consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit to consectetur elit. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the
-											first generator on the Internet. It uses a dictionary of over 200 Latin words, That combined with a handful of model sentence generate Lorem the Ipsum which looks reasonable.</p>
+										<p> Any kind of computer software is developed and tested by We Tech. After launching the product we monitor and supervise the product with our support Team.</p>
 									</div>
 								</div>
 							</div>
@@ -513,9 +509,7 @@ include("sections/header.php");
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-600">
 										<h2 class="item-title">Music Hosting website</h2>
 									</div>
-									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1100">
-										<div class="sub-paragraph">Lorem ipsum dolor sit amet, consectetur a sed eiusmod the tempor incididunt ut labore dummy alom.</div>
-									</div>
+								
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1600">
 										<p>Consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit to consectetur elit. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the
 											first generator on the Internet. It uses a dictionary of over 200 Latin words, That combined with a handful of model sentence generate Lorem the Ipsum which looks reasonable.</p>
@@ -598,12 +592,12 @@ include("sections/header.php");
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-600">
 										<h2 class="item-title">Domain & Hosting</h2>
 									</div>
-									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1100">
-										<div class="sub-paragraph">Lorem ipsum dolor sit amet, consectetur a sed eiusmod the tempor incididunt ut labore dummy alom.</div>
-									</div>
+								
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1600">
-										<p>Consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit to consectetur elit. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the
-											first generator on the Internet. It uses a dictionary of over 200 Latin words, That combined with a handful of model sentence generate Lorem the Ipsum which looks reasonable.</p>
+										<p>
+											Our vision is to provide a best domain & hosting for any kind of websites with a flexible and feasible renew system. Customer needs are our first criteria about domain & hosting. 
+
+										</p>
 									</div>
 								</div>
 							</div>
@@ -637,12 +631,9 @@ include("sections/header.php");
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-600">
 										<h2 class="item-title">Video hosting Website</h2>
 									</div>
-									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1100">
-										<div class="sub-paragraph">Lorem ipsum dolor sit amet, consectetur a sed eiusmod the tempor incididunt ut labore dummy alom.</div>
-									</div>
+								
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1600">
-										<p>Consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit to consectetur elit. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the
-											first generator on the Internet. It uses a dictionary of over 200 Latin words, That combined with a handful of model sentence generate Lorem the Ipsum which looks reasonable.</p>
+										<p>We can develop live streaming platform for sports, functions, facebook events etc. We provide strong bandwidth and buffer less podcast videos. </p>
 									</div>
 								</div>
 							</div>
@@ -722,12 +713,9 @@ include("sections/header.php");
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-600">
 										<h2 class="item-title">Real time tracking Website</h2>
 									</div>
-									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1100">
-										<div class="sub-paragraph">Lorem ipsum dolor sit amet, consectetur a sed eiusmod the tempor incididunt ut labore dummy alom.</div>
-									</div>
+							
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1600">
-										<p>Consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit to consectetur elit. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the
-											first generator on the Internet. It uses a dictionary of over 200 Latin words, That combined with a handful of model sentence generate Lorem the Ipsum which looks reasonable.</p>
+										<p>We develop any kind of product delivery, food delivery and car hiring live position sharing system. The system can show real time tracking. </p>
 									</div>
 								</div>
 							</div>
@@ -805,12 +793,9 @@ include("sections/header.php");
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-600">
 										<h2 class="item-title">SSL Commerce</h2>
 									</div>
-									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1100">
-										<div class="sub-paragraph">Lorem ipsum dolor sit amet, consectetur a sed eiusmod the tempor incididunt ut labore dummy alom.</div>
-									</div>
+							
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1600">
-										<p>Consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit to consectetur elit. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the
-											first generator on the Internet. It uses a dictionary of over 200 Latin words, That combined with a handful of model sentence generate Lorem the Ipsum which looks reasonable.</p>
+										<p>We can give you the best payment gateway system with no transaction loss. The payment gateway is up to date with online transaction system and having a strong security details.   </p>
 									</div>
 								</div>
 							</div>

@@ -24,14 +24,13 @@ if(isset($_SESSION['admin_phn'])){
     $admin_name = $row_admin_info['admin_name'];
   
     $admin_image = $row_admin_info['admin_image'];
-  
+ 
     
   }else{
     $admin_name = 'Admin';
   
     $admin_image = 'admin.png';
   }
-
 
 
 
@@ -97,21 +96,21 @@ include("../includes/sidebar.php");
                       <div class="col-md-12">
                         <div class="form-group">
                           <label class="bmd-label-floating">Old Password</label>
-                          <input type="text" name="old_pass" class="form-control" required>
+                          <input type="text" name="old_pass"  class="form-control" required>
                         </div>
                       </div>
                     </div>
 
-
+                
                     <div class="row">
                       <div class="col-md-12">
                         <div class="form-group">
-                          <label class="bmd-label-floating">New Password</label>
+                          <label class="bmd-label-floating" >New Password</label>
                           <input type="text" name="new_pass" class="form-control" required>
                         </div>
                       </div>
                     </div>
-                        <input type="submit" value="Change" name="change_pass_submit" class="btn btn-primary pull-right"/>
+                        <input type="submit" value="Change"  name="change_pass_submit" class="btn btn-primary pull-right"/>
                     <div class="clearfix"></div>
                   </form>
            <?php 
@@ -120,23 +119,44 @@ include("../includes/sidebar.php");
             $old_pass = $_POST['old_pass'];
 
             $new_pass = $_POST['new_pass'];
-          
-            $update_password = "update admins set admin_pass ='$new_pass'  where admin_phn=$target_phn";
-            $run_password =mysqli_query($con,$update_password);
-          
-            if($run_password){
-                    
-              echo "<script>alert('Your New Password Has Been Updated Successfuly')</script>";
-              
-              echo "<script>window.open('user.php','_self')</script>";
-              
-          }
-          else
-          {
-            echo "<script>alert('Your New Password Updation Failed!')</script>";
-            echo "<script>window.open('user.php','_self')</script>";
 
-          }
+            
+                              
+  $get_admin= "select * from admins where admin_phn=$target_phn";
+  
+  $run_admin = mysqli_query($con,$get_admin);
+  if($row_admin = mysqli_fetch_array($run_admin)){
+  
+    $admin_pass = $row_admin['admin_pass'];
+
+    if($admin_pass == $old_pass){
+      $update_password = "update admins set admin_pass ='$new_pass'  where admin_phn=$target_phn";
+      $run_password =mysqli_query($con,$update_password);
+    
+      if($run_password){
+              
+        echo "<script>alert('Your New Password Has Been Updated Successfuly')</script>";
+        
+        echo "<script>window.open('user.php','_self')</script>";
+        
+    }else
+    {
+      echo "<script>alert('Your New Password Updation Failed!')</script>";
+      echo "<script>window.open('user.php','_self')</script>";
+  
+    }
+
+    }else{
+      echo "<script>alert('Your Old password does not match! Please try again.')</script>";
+      echo "<script>window.open('user.php','_self')</script>";
+    }
+
+
+ 
+    
+  }
+          
+       
           
           }
            
@@ -151,7 +171,7 @@ include("../includes/sidebar.php");
               <div class="card card-profile">
                 <div class="card-avatar">
                   <a href="#pablo">
-                    <img class="img" src="../../images/other-images/<?php echo $admin_image; ?>" />
+                    <img class="img" src="../../media/admin/<?php echo $admin_image; ?>" />
                   </a>
                 </div>
 
@@ -175,7 +195,7 @@ include("../includes/sidebar.php");
           
           <div class="copyright float-right" id="date">
             , made with <i class="material-icons">favorite</i> by
-            <a href="#" target="_blank">RobTechBD Limited</a> for a better web.
+            <a href="#" target="_blank">Robin</a> for a better web.
           </div>
         </div>
       </footer>

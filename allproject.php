@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+ 
+<?php
+ 
+ include("includes/db.php");
+?>
+
+ <!DOCTYPE html>
 <html lang="en">
 
 
@@ -137,180 +143,102 @@ include("sections/header.php");
 					<div class="isotope-wrap">
 						<div class="isotope-classes-tab isotop-btn-layout1">
 							<a href="#" class="current nav-item" data-filter=".all">See All</a>
-							<a href="#" class="nav-item" data-filter=".mobile_app">Mobile App</a>
-							<a href="#" class="nav-item" data-filter=".web_app">Web App </a>
-							<a href="#" class="nav-item" data-filter=".ui">UI/UX</a>
-							<a href="#" class="nav-item" data-filter=".others">others</a>
+							<?php
+
+$get_categories = "select * from category";
+
+$run_categories = mysqli_query($con,$get_categories);
+
+$i=0;
+
+while($row_categories = mysqli_fetch_array($run_categories)){
+
+     $cat_id = $row_categories['cat_id'];
+
+     $cat_title = $row_categories['cat_title'];
+
+   
+    //  $get_count_item = "select * from projects where item_cat=$cat_id";
+     
+    //  $run_count_item = mysqli_query($con,$get_count_item);
+
+    //  $count_item= mysqli_num_rows($run_count_item);
+
+     $i++;
+     
+
+?>
+							<a href="#" class="nav-item" data-filter=".<?php echo $cat_title; ?>"> <?php echo $cat_title; ?></a>
+<?php } ?>
+							
 						</div>
 						<div class="row featuredContainer">
-							<div class="col-lg-4 col-sm-6 col-12 all mobile_app illustrations">
+
+						<?php
+
+$get_projects = "select * from projects";
+
+$run_projects  = mysqli_query($con,$get_projects);
+
+$i=0;
+
+while($row_project  = mysqli_fetch_array($run_projects )){
+
+     $p_id = $row_project['p_id'];
+
+     $p_title = $row_project['p_title'];
+
+     $p_desc = $row_project['p_desc'];
+
+     $p_category_id = $row_project['p_category'];
+
+
+     
+    $get_category = "select * from category where cat_id='$p_category_id' ";
+
+    $run_category   = mysqli_query($con,$get_category);
+
+    if($row_category = mysqli_fetch_array($run_category)){
+        $cat_title = $row_category['cat_title'];
+    }
+
+
+	$get_target_project_slider= "select * from pro_details_slider where p_project_id='$p_id' limit 1 ";
+	$run_target_project_slider= mysqli_query($con,$get_target_project_slider);
+	
+  
+	if($row_target_project_slider = mysqli_fetch_array($run_target_project_slider)){
+  
+	   $target_p_d_id = $row_target_project_slider['p_d_id'];
+	   $target_p_d_img = $row_target_project_slider['p_d_img'];
+
+	}
+
+
+
+     $i++;
+     
+
+?>
+
+
+							<div class="col-lg-4 col-sm-6 col-12 all <?php echo $cat_title; ?> illustrations">
 								<div class="gallery-box-layout1">
 									<div class="item-figure">
-										<img src="media/gallery/gallery27.jpg" alt="gallery" class="img-fluid mx-auto d-block" >
+										<img src="media/project/<?php echo $target_p_d_img; ?>" alt="gallery" class="img-fluid mx-auto d-block" >
 									</div>
 									<div class="item-content">
 										<div class="item-icon">
-											<a href="media/gallery/gallery27.jpg" class="popup-zoom" data-fancybox-group="gallery" title=""><i class="fas fa-plus"></i></a>
+											<a href="media/project/<?php echo $target_p_d_img; ?>" class="popup-zoom" data-fancybox-group="gallery" title=""><i class="fas fa-plus"></i></a>
 										</div>
-										<h3 class="item-title"><a href="projectDetails.php">From Print to Platform</a></h3>
-										<p>Branding Items</p>
+										<h3 class="item-title"><a href="projectDetails.php?pro_id=<?php echo $p_id; ?>"><?php echo $p_title; ?></a></h3>
+										<p><?php echo $cat_title; ?></p>
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-4 col-sm-6 col-12 all ui others">
-								<div class="gallery-box-layout1">
-									<div class="item-figure">
-										<img src="media/gallery/gallery28.jpg" alt="gallery" class="img-fluid mx-auto d-block" class="img-fluid mx-auto d-block">
-									</div>
-									<div class="item-content">
-										<div class="item-icon">
-											<a href="media/gallery/gallery28.jpg" class="popup-zoom" data-fancybox-group="gallery" title=""><i class="fas fa-plus"></i></a>
-										</div>
-										<h3 class="item-title"><a href="projectDetails.php">From Print to Platform</a></h3>
-										<p>Branding Items</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-sm-6 col-12 all mobile_app web_app">
-								<div class="gallery-box-layout1">
-									<div class="item-figure">
-										<img src="media/gallery/gallery29.jpg" alt="gallery" class="img-fluid mx-auto d-block">
-									</div>
-									<div class="item-content">
-										<div class="item-icon">
-											<a href="media/gallery/gallery29.jpg" class="popup-zoom" data-fancybox-group="gallery" title=""><i class="fas fa-plus"></i></a>
-										</div>
-										<h3 class="item-title"><a href="projectDetails.php">From Print to Platform</a></h3>
-										<p>Branding Items</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-sm-6 col-12 all ui">
-								<div class="gallery-box-layout1">
-									<div class="item-figure">
-										<img src="media/gallery/gallery30.jpg" alt="gallery" class="img-fluid mx-auto d-block">
-									</div>
-									<div class="item-content">
-										<div class="item-icon">
-											<a href="media/gallery/gallery30.jpg" class="popup-zoom" data-fancybox-group="gallery" title=""><i class="fas fa-plus"></i></a>
-										</div>
-										<h3 class="item-title"><a href="projectDetails.php">From Print to Platform</a></h3>
-										<p>Branding Items</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-sm-6 col-12 all mobile_app ui">
-								<div class="gallery-box-layout1">
-									<div class="item-figure">
-										<img src="media/gallery/gallery31.jpg" alt="gallery" class="img-fluid mx-auto d-block">
-									</div>
-									<div class="item-content">
-										<div class="item-icon">
-											<a href="media/gallery/gallery31.jpg" class="popup-zoom" data-fancybox-group="gallery" title=""><i class="fas fa-plus"></i></a>
-										</div>
-										<h3 class="item-title"><a href="projectDetails.php">From Print to Platform</a></h3>
-										<p>Branding Items</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-sm-6 col-12 all web_app ui">
-								<div class="gallery-box-layout1">
-									<div class="item-figure">
-										<img src="media/gallery/gallery32.jpg" alt="gallery" class="img-fluid mx-auto d-block">
-									</div>
-									<div class="item-content">
-										<div class="item-icon">
-											<a href="media/gallery/gallery32.jpg" class="popup-zoom" data-fancybox-group="gallery" title=""><i class="fas fa-plus"></i></a>
-										</div>
-										<h3 class="item-title"><a href="projectDetails.php">From Print to Platform</a></h3>
-										<p>Branding Items</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-sm-6 col-12 all mobile_app ui">
-								<div class="gallery-box-layout1">
-									<div class="item-figure">
-										<img src="media/gallery/gallery33.jpg" alt="gallery" class="img-fluid mx-auto d-block">
-									</div>
-									<div class="item-content">
-										<div class="item-icon">
-											<a href="media/gallery/gallery33.jpg" class="popup-zoom" data-fancybox-group="gallery" title=""><i class="fas fa-plus"></i></a>
-										</div>
-										<h3 class="item-title"><a href="projectDetails.php">From Print to Platform</a></h3>
-										<p>Branding Items</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-sm-6 col-12 all others">
-								<div class="gallery-box-layout1">
-									<div class="item-figure">
-										<img src="media/gallery/gallery34.jpg" alt="gallery" class="img-fluid mx-auto d-block">
-									</div>
-									<div class="item-content">
-										<div class="item-icon">
-											<a href="media/gallery/gallery34.jpg" class="popup-zoom" data-fancybox-group="gallery" title=""><i class="fas fa-plus"></i></a>
-										</div>
-										<h3 class="item-title"><a href="projectDetails.php">From Print to Platform</a></h3>
-										<p>Branding Items</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-sm-6 col-12 all web_app">
-								<div class="gallery-box-layout1">
-									<div class="item-figure">
-										<img src="media/gallery/gallery35.jpg" alt="gallery" class="img-fluid mx-auto d-block">
-									</div>
-									<div class="item-content">
-										<div class="item-icon">
-											<a href="media/gallery/gallery35.jpg" class="popup-zoom" data-fancybox-group="gallery" title=""><i class="fas fa-plus"></i></a>
-										</div>
-										<h3 class="item-title"><a href="projectDetails.php">From Print to Platform</a></h3>
-										<p>Branding Items</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-sm-6 col-12 all mobile_app ul">
-								<div class="gallery-box-layout1">
-									<div class="item-figure">
-										<img src="media/gallery/gallery36.jpg" alt="gallery" class="img-fluid mx-auto d-block">
-									</div>
-									<div class="item-content">
-										<div class="item-icon">
-											<a href="media/gallery/gallery36.jpg" class="popup-zoom" data-fancybox-group="gallery" title=""><i class="fas fa-plus"></i></a>
-										</div>
-										<h3 class="item-title"><a href="projectDetails.php">From Print to Platform</a></h3>
-										<p>Branding Items</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-sm-6 col-12 all mobile_app">
-								<div class="gallery-box-layout1">
-									<div class="item-figure">
-										<img src="media/gallery/gallery37.jpg" alt="gallery" class="img-fluid mx-auto d-block">
-									</div>
-									<div class="item-content">
-										<div class="item-icon">
-											<a href="media/gallery/gallery37.jpg" class="popup-zoom" data-fancybox-group="gallery" title=""><i class="fas fa-plus"></i></a>
-										</div>
-										<h3 class="item-title"><a href="projectDetails.php">From Print to Platform</a></h3>
-										<p>Branding Items</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-sm-6 col-12 all ul">
-								<div class="gallery-box-layout1">
-									<div class="item-figure">
-										<img src="media/gallery/gallery38.jpg" alt="gallery" class="img-fluid mx-auto d-block">
-									</div>
-									<div class="item-content">
-										<div class="item-icon">
-											<a href="media/gallery/gallery38.jpg" class="popup-zoom" data-fancybox-group="gallery" title=""><i class="fas fa-plus"></i></a>
-										</div>
-										<h3 class="item-title"><a href="projectDetails.php">From Print to Platform</a></h3>
-										<p>Branding Items</p>
-									</div>
-								</div>
-							</div>
+						
+			<?php } ?>
+
 						</div>
 					</div>
 				</div>

@@ -1,3 +1,9 @@
+
+<?php
+ 
+ include("includes/db.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -130,6 +136,39 @@ include("sections/header.php");
                     </h2>
                     <hr>
 
+					<?php
+
+$get_careers = "select * from careers";
+
+$run_careers  = mysqli_query($con,$get_careers);
+
+$i=0;
+
+while($row_careers  = mysqli_fetch_array($run_careers )){
+
+     $career_id = $row_careers['career_id'];
+
+     $career_language = $row_careers['career_language'];
+
+     $career_title = $row_careers['career_title'];
+
+     $career_duties = $row_careers['career_duties'];
+
+     $career_educational = $row_careers['career_educational'];
+
+     $career_qualification = $row_careers['career_qualification'];
+
+     $career_app_ins = $row_careers['career_app_ins'];
+
+     
+
+
+
+     $i++;
+     
+
+?>				
+
                     <div class="card career_box mb-4">
                         <div class="row p-2">
                             <div class="col-sm-2">
@@ -139,11 +178,11 @@ include("sections/header.php");
 
                             <div class="col-sm-10 card-body">
                             <div class="d-inline-block">
-                            <h3 class="card-text">Software Development Lead</h3>
-                            <p class="card-text">Javascript,Node js,React,MongoDB</p>
+                            <h3 class="card-text">   <?php echo $career_title; ?> </h3>
+                            <p class="card-text"> <?php echo $career_language; ?></p>
                             </div>
 
-                            <a href="careerDetails.php" class="btn-fill btn-gradient float-right mr-4 career_btn"> View Details </a>
+                            <a href="careerDetails.php?career_id=<?php echo $career_id; ?>" class="btn-fill btn-gradient float-right mr-4 career_btn"> View Details </a>
 
 
                              </div>
@@ -154,56 +193,9 @@ include("sections/header.php");
 
                         
                     </div>
-                    <div class="card career_box mb-4">
-                        <div class="row p-2">
-                            <div class="col-sm-2">
-                            <img src="media/svg/engineer.svg"  alt="engineer" class=" mt-3 ml-2 rounded mx-auto d-block" style="width:75px; height:75px">
+                 
 
-                            </div>
-
-                            <div class="col-sm-10 card-body">
-                            <div class="d-inline-block">
-                            <h3 class="card-text">Software Development Lead</h3>
-                            <p class="card-text">Javascript,Node js,React,MongoDB</p>
-                            </div>
-
-                            <a href="careerDetails.php" class="btn-fill btn-gradient float-right mr-4 career_btn"> View Details </a>
-
-
-                             </div>
-
-
-                         
-                        </div>
-
-                        
-                    </div>
-
-                    <div class="card career_box mb-4">
-                        <div class="row p-2">
-                            <div class="col-sm-2">
-                            <img src="media/svg/engineer.svg"  alt="engineer" class=" mt-3 ml-2 rounded mx-auto d-block" style="width:75px; height:75px">
-
-                            </div>
-
-                            <div class="col-sm-10 card-body">
-                            <div class="d-inline-block">
-                            <h3 class="card-text">Software Development Lead</h3>
-                            <p class="card-text">Javascript,Node js,React,MongoDB</p>
-                            </div>
-
-                            <a href="careerDetails.php" class="btn-fill btn-gradient float-right mr-4 career_btn"> View Details </a>
-
-
-                             </div>
-
-
-                         
-                        </div>
-
-                        
-                    </div>
-
+<?php } ?>
                 
                 
 

@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+
+<?php
+ 
+ include("includes/db.php");
+?>
+ 
+ <!DOCTYPE html>
 <html lang="en">
 
 
@@ -140,14 +146,13 @@
 							<div class="about-box-layout10">
 								<div class="content-holder">
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-100">
-										<h2 class="item-title">We Tech Technology Provide Soluation</h2>
+										<h2 class="item-title">We Tech Technology</h2>
 									</div>
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-500">
-										<p>Grursus mal suada faci lisis Lorem ipsum dolarorit ametion consectetur elit. The Vesti at bulum nec odio aea the dumm ipsumm ipsum dolocons is suada a and fadolorit to the consectetur elit. Grursus mal suada faci lisis Lorem dolarorit the ametion
-											consectetur elit.</p>
+										<h5>Enterprise Solutions and Software Services, Perfect Software Solution, Strategic Technology Consulting, and E-Commerce are some of the services we provide. </h5>
 									</div>
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-900">
-										<p>Grursus mal suada faci lisis Lorem ipsum dolarorit ametion consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum dolocons is suada a and fadolorit to the consectetur elit.</p>
+										<p>The firm was established in 2019 with the goal of ushering in a new age of IT in Dhaka, Bangladesh. Our goal is to be recognized in the marketplace for the excellent quality of our work and services. This is accomplished through enhancing our business culture, project management, and knowledge management processes inside and across our client teams.</p>
 									</div>
 									
 								</div>
@@ -200,7 +205,10 @@
 												</div>
 												<div class="inner-item-content">
 													<h3 class="inner-title">Mission</h3>
-													<p>Empowering region with technological advancement.</p>
+													<p>• Utilize Bangladesh's skills and resources to deliver high-quality IT solutions to local customers.</p>
+													<p>• Customer Satisfaction</p>
+													<p>• Empowering region with technological advancement.</p>
+
 												</div>
 											</li>
 											<li class="icon-bg-radical-red">
@@ -209,7 +217,10 @@
 												</div>
 												<div class="inner-item-content">
 													<h3 class="inner-title">Vision</h3>
-													<p>Become the regionaltechnology marketleader embedding youths in service.</p>
+													<p>• Become the regional technology market leader embedding youths in service</p>
+													<p>• Creating a computing platform is to work with both networking and mobile platform.</p>
+													<p>• Ensure a fully updated information ecosystem.</p>
+															
 												</div>
 											</li>
 											<li class="icon-bg-west-side">
@@ -218,7 +229,10 @@
 												</div>
 												<div class="inner-item-content">
 													<h3 class="inner-title">Reach</h3>
-													<p>WE create value basedupon client’s requirements and needs</p>
+													<p>• Create value based upon client’s requirements and needs. </p>
+													<p>• Ensure a fully updated information ecosystem.</p>
+													<p>• Establish 24*7 network system..</p>
+													
 												</div>
 											</li>
 										</ul>
@@ -243,33 +257,45 @@
 					</div>
 					<ul class="history-inner-layout1">
 						<li class="history-box-layout1">
-							<div class="item-year">2018</div>
-							<div class="item-content">
-								<h3>Established</h3>
-								<p>Grursus mal suada faci lisis Lorem ipsum more dolarorit ametion consectetur elit. </p>
-							</div>
-						</li>
-						<li class="history-box-layout1">
 							<div class="item-year">2019</div>
 							<div class="item-content">
-								<h3>Office Founded</h3>
-								<p>Grursus mal suada faci lisis Lorem ipsum more dolarorit ametion consectetur elit. </p>
+								<h3>Established</h3>
+							 <p>•	We Tech was founded. </p>	
+							 <p>•	Got our First project of Study Corp. </p>	
+							 <p>•	Delivered the First project. </p>	
+							 <p>•	Our First Product Launched in Play Store: “PrimeEdu”. </p>	
+							 
+
+
+
+
 							</div>
 						</li>
 						<li class="history-box-layout1">
-							<div class="item-year">2020</div>
+							<div class="item-year"> 2020</div>
 							<div class="item-content">
-								<h3>Big Restructuring..</h3>
-								<p>Grursus mal suada faci lisis Lorem ipsum more dolarorit ametion consectetur elit. </p>
+								<h3>Second Year</h3>
+								<p>•	Educational Platform project launched for “Dreams for Tomorrow”. </p>	
+								<p>•	Handed over multinational company project: “OCS”. </p>	
+								<p>•	Start working outside Dhaka at Mymensingh & Rangpur. </p>	
+								
+								
+
+
+
 							</div>
 						</li>
 						<li class="history-box-layout1">
 							<div class="item-year">2021</div>
 							<div class="item-content">
-								<h3>We Have Opened Two Offices</h3>
-								<p>Grursus mal suada faci lisis Lorem ipsum more dolarorit ametion consectetur elit. </p>
+								<h3>The Pandemic Year</h3>
+								<p>•	Started E-commerce System at Mymensingh.</p>	
+								<p>•	PrimeEdu creates a new platform in school management.</p>	
+								<p>•	To be continued……… </p>	
+								
 							</div>
 						</li>
+					
 					</ul>
 				</div>
 			</section>
@@ -340,17 +366,16 @@
 							<div class="about-box-layout8">
 								<div class="content-holder has-animation">
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1000">
-										<h2 class="item-title">We Work With 5 Years Of Experience</h2>
+										<h2 class="item-title">We work with 3 years of Experience:</h2>
 									</div>
-									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1300">
-										<p>Grursus mal suada faci lisis Lorem ipsum dolarorit more a ametion that consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit.</p>
-									</div>
+									
 									<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1600">
 										<ul class="list-item">
-											<li>Web Design &amp; Development</li>
-											<li>App Design &amp; Development</li>
-											<li>Making Scalable Softwares</li>
-											<li>Expert Team</li>
+											<li>Web development</li>
+											<li>School Management</li>
+											<li>E-commerce</li>
+											<li>Mobile App</li>
+											<li>Dedicated Team</li>
 											<li>Offerdable Price</li>
 											<li>Quick Access</li>
 											<li>Pixel Perfect</li>

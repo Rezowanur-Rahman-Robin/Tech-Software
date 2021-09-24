@@ -118,11 +118,11 @@ while($row_categories = mysqli_fetch_array($run_categories)){
      $cat_title = $row_categories['cat_title'];
 
    
-    //  $get_count_item = "select * from projects where item_cat=$cat_id";
+     $get_count_item = "select * from projects where p_category=$cat_id";
      
-    //  $run_count_item = mysqli_query($con,$get_count_item);
+     $run_count_item = mysqli_query($con,$get_count_item);
 
-    //  $count_item= mysqli_num_rows($run_count_item);
+     $count_item= mysqli_num_rows($run_count_item);
 
      $i++;
      
@@ -136,7 +136,7 @@ while($row_categories = mysqli_fetch_array($run_categories)){
                           <?php echo $cat_title; ?>
                           </td>
                           <td>
-                          <?php echo "10"; ?>
+                          <?php echo $count_item; ?>
                           </td>
                           <td>
                             <a href="editCategory.php?category_id=<?php echo $cat_id ;?>">  <span class="material-icons text-success">border_color</span></a>

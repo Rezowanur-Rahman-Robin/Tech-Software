@@ -43,7 +43,7 @@ if(localStorage.getItem('phone')){
 		      		<span class="fa fa-user-o"></span>
 		      	</div>
 		      	<h3 class="text-center mb-4">Are You Admin?</h3>
-						<form action="" method="post" class="login-form">
+				<form action="" method="post" class="login-form">
 		      		<div class="form-group">
 		      			<input type="number" name="login_phn" class="form-control rounded-left" placeholder="Phone Number" required>
 		      		</div>

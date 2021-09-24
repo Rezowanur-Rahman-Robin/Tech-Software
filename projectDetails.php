@@ -1,3 +1,11 @@
+
+<?php
+ 
+ include("includes/db.php");
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -120,7 +128,7 @@ include("sections/header.php");
 							<li>
 								<a href="index.php">Home</a>
 							</li>
-							<li>Prime Edu Application Management</li>
+							<li>Project Details</li>
 						</ul>
 					</div>
 				</div>
@@ -134,14 +142,56 @@ include("sections/header.php");
 			<!--=====================================-->
 			<!--=      Team Section Area Start      =-->
 			<!--=====================================-->
+
+			<?php
+
+if(isset($_GET['pro_id'])){
+    
+    $target_p_id = $_GET['pro_id'];
+
+	  
+$get_target_project= "select * from projects where p_id='$target_p_id' ";
+$run_target_project= mysqli_query($con,$get_target_project);
+
+if($row_target_project = mysqli_fetch_array($run_target_project)){
+
+       $target_p_title= $row_target_project['p_title'];
+
+       $target_p_desc = $row_target_project['p_desc'];
+
+       $target_p_category = $row_target_project['p_category'];
+
+     
+  
+}
+
+ }
+			?>
 			<section class="gallery-details-wrap section-padding-md-equal bg-color-light">
 				<div class="container">
 					<div class="mb-5 rc-carousel nav-control-layout7" data-loop="true" data-items="5" data-margin="30" data-autoplay="false" data-autoplay-timeout="5000" data-smart-speed="700" data-dots="false" data-nav="true" data-nav-speed="false" data-r-x-small="1" data-r-x-small-nav="true"
 					 data-r-x-small-dots="false" data-r-x-medium="1" data-r-x-medium-nav="true" data-r-x-medium-dots="false" data-r-small="1" data-r-small-nav="true" data-r-small-dots="false" data-r-medium="1" data-r-medium-nav="true" data-r-medium-dots="false" data-r-large="1"
 					 data-r-large-nav="true" data-r-large-dots="false" data-r-extra-large="1" data-r-extra-large-nav="true" data-r-extra-large-dots="false">
                      
-                     <img src="media/gallery/gallery91.jpg" alt="gallery" class="slider_image">
-                     <img src="media/gallery/prime_edu.png" alt="gallery" class="slider_image">
+					 <?php
+  $get_target_project_slider= "select * from pro_details_slider where p_project_id='$target_p_id' ";
+  $run_target_project_slider= mysqli_query($con,$get_target_project_slider);
+  $number_of_slider= mysqli_num_rows($run_target_project_slider);
+
+
+  while($row_target_project_slider = mysqli_fetch_array($run_target_project_slider)){
+
+     $target_p_d_id = $row_target_project_slider['p_d_id'];
+     $target_p_d_img = $row_target_project_slider['p_d_img'];
+	 ?>
+
+ 
+
+                     <img src="media/project/<?php echo $target_p_d_img; ?>" alt="gallery" class="slider_image" style="max-height:600px">
+
+	 <?php } ?>
+
+                    
 					</div>
 					<div class="row">
 						<div class="col-lg-8">
@@ -149,10 +199,12 @@ include("sections/header.php");
 								<div class="item-content">
 
                                 
-									<h2 class="item-title">From Print To Platform</h2>
-									<p>Grursus mal suada faci lisis Lorem ipsum dolarorit more a ametion consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit to the consectetur elit. All the Lorem Ipsum generators on the Internet
-										tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
-										Grursus mal suada faci lisis Lorem ipsum dolarorit more a ametion consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit to the consectetur elit.</p>
+									<h2 class="item-title"><?php echo $target_p_title; ?></h2>
+									<div class="projectDesc">
+									
+									<?php echo $target_p_desc; ?>
+									
+									</div>
 								</div>
 							</div>
 						</div>
@@ -164,10 +216,29 @@ include("sections/header.php");
 											<h3 class="item-heading text-center" style="border-bottom: 3px solid #5a49f8;">Main Aspects </h3> 
 										</div>
 										<div class="list-item d-block">
-											<div class="d-flex "><img width='30' height='30' class="mr-2" src="media/svg/check-mark.svg" alt=""> <span class="aspect_desc">ONLINE ATTENDANCE AND UPGRADED CLASS MANAGEMENT</span></div> <br>
-											<div class="d-flex"><img  width='30' height='30' class="mr-2"  src="media/svg/check-mark.svg" alt=""> <span class="aspect_desc">PROVIDING CLASS RESULTS</span> </div><br>
-											<div class="d-flex"><img width='30' height='30' class="mr-2"   src="media/svg/check-mark.svg" alt=""> <span class="aspect_desc">NOTICE BOARD FOR INDIVIDUAL SCHOOL AND CLASS</span> </div><br>
-											<div class="d-flex"><img  width='30' height='30' class="mr-2"  src="media/svg/check-mark.svg" alt=""> <span class="aspect_desc">NOTICE BOARD FOR INDIVIDUAL SCHOOL AND CLASS</span> </div><br>
+										<?php
+  $get_target_project_aspect= "select * from pro_details_aspects where p_project_id='$target_p_id' ";
+  $run_target_project_aspect= mysqli_query($con,$get_target_project_aspect);
+  $number_of_aspect= mysqli_num_rows($run_target_project_aspect);
+  $p=0;
+  $defaultAspect = new SplFixedArray($number_of_aspect+2);
+
+  $a_id_Aspect = new SplFixedArray($number_of_aspect+2);
+  $r=0;
+
+  while($row_target_project_aspect = mysqli_fetch_array($run_target_project_aspect)){
+
+     $target_p_a_id = $row_target_project_aspect['p_a_id'];
+
+     $target_p_aspect_title = $row_target_project_aspect['p_a_title'];
+
+     $p++;
+     $r++;
+	 ?>
+<div class="d-flex "><img width='30' height='30' class="mr-2" src="media/svg/check-mark.svg" alt=""> <span class="aspect_desc"><?php echo $target_p_aspect_title; ?></span></div> <br>
+											     
+  <?php } ?>
+											
 										</div>
 									</div>
 								</div>

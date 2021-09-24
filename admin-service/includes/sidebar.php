@@ -99,6 +99,17 @@
             </a>
           </li>
 
+          
+
+          <li class="nav-item ">
+            <a class="nav-link" href="user.php">
+            <i class="material-icons">account_circle</i>
+              <p> My Profile </p>
+            </a>
+          </li>
+
+          
+
           <li class="nav-item "><!-- li begin -->
            
            <a class="nav-link" href="#" data-toggle="collapse" data-target="#projects"><!-- a href begin -->

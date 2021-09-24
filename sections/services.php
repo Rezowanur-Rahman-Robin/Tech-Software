@@ -40,9 +40,25 @@
 						</div>
 					
 					</div>
-					<div class="row masonry-items">
 
-					<div class="col-lg-4 col-sm-6 col-12 masonry-item has-animation">
+
+					<div class="row masonry-items " id="projectContainer">
+
+					
+
+
+					</div>
+
+					<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1900 text-center">
+										<a href="serviceDetails.php" class="btn-fill btn-gradient">View More<i class="flaticon-next"></i></a>
+					</div>
+				</div>
+			</section>
+
+			<script>
+						if(screen.width < 700){
+							document.querySelector("#projectContainer").innerHTML=
+							`<div class="col-lg-4 col-sm-6 col-12 masonry-item has-animation">
 							<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-300">
 								<div class="service-box-layout1">
 									<div class="icon-holder icon-bg-royal-blue">
@@ -54,7 +70,6 @@
 							</svg>
 									</div>
 									<h3 class="item-title"><a href="serviceDetails.php#ecom">E Commerce Website</a></h3>
-									<p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
 									<a href="serviceDetails.php#ecom" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
 								</div>
 							</div>
@@ -72,7 +87,6 @@
 										</svg>
 									</div>
 									<h3 class="item-title"><a href="serviceDetails.php#mob">Mobile Application</a></h3>
-									<p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
 									<a href="serviceDetails.php#mob" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
 								</div>
 							</div>
@@ -90,7 +104,60 @@
 							</svg>
 									</div>
 									<h3 class="item-title"><a href="serviceDetails.php#testing">Testing</a></h3>
-									<p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
+									<a href="serviceDetails.php#testing" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
+								</div>
+							</div>
+						</div> 
+						`
+
+						}else{
+							document.querySelector("#projectContainer").innerHTML=
+							`<div class="col-lg-4 col-sm-6 col-12 masonry-item has-animation">
+							<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-300">
+								<div class="service-box-layout1">
+									<div class="icon-holder icon-bg-royal-blue">
+										<div class="item-icon icon-color-royal-blue">
+											<i class="flaticon-origami"></i>
+										</div>
+										<svg class="icon-bg-shape" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="111px" height="79px">
+								<path d="M104.291,51.828 C98.019,60.839 88.939,65.934 79.675,69.589 C78.703,69.973 77.729,70.339 76.756,70.695 C70.214,73.079 63.555,75.012 56.818,76.487 C52.170,77.504 46.185,79.782 41.377,78.729 C35.709,77.491 29.573,72.385 24.073,66.622 C19.930,62.282 16.148,57.570 13.202,53.858 C9.879,49.670 6.733,45.085 4.332,40.057 C2.705,36.648 1.416,33.039 0.660,29.205 C0.495,28.369 0.363,27.520 0.260,26.664 C-0.809,17.814 1.431,8.213 7.280,3.434 C12.395,-0.743 19.166,-0.569 25.289,1.096 C31.411,2.760 37.332,5.756 43.525,6.802 C50.958,8.057 58.411,6.451 65.704,4.762 C72.997,3.075 80.398,1.296 87.854,2.211 C88.123,2.244 88.392,2.289 88.661,2.332 C95.524,3.379 102.448,7.076 106.734,13.861 C106.943,14.192 107.153,14.521 107.349,14.867 C113.666,26.001 111.221,41.873 104.291,51.828 Z"/>
+							</svg>
+									</div>
+									<h3 class="item-title"><a href="serviceDetails.php#ecom">E Commerce Website</a></h3>
+									<a href="serviceDetails.php#ecom" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-sm-6 col-12 masonry-item has-animation">
+							<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-300">
+								<div class="service-box-layout1">
+									<div class="icon-holder icon-bg-california">
+										<div class="item-icon icon-color-california">
+											<i class="flaticon-smartphone"></i>
+										</div>
+										<svg class="icon-bg-shape" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="80px">
+											<path d="M95.798,66.493 C95.402,67.238 94.989,67.934 94.568,68.608 C92.140,72.492 89.322,75.200 86.228,76.996 C75.718,83.098 62.044,78.694 49.794,74.183 C30.107,66.931 13.369,52.019 4.629,32.917 C0.428,23.737 -1.365,11.491 6.138,4.714 C11.356,0.001 19.072,-0.185 26.172,0.068 C26.493,0.079 26.814,0.090 27.132,0.103 C31.363,0.275 35.595,0.448 39.826,0.620 C45.043,0.833 50.261,1.045 55.479,1.256 C57.205,1.327 58.931,1.397 60.658,1.467 C67.392,1.740 74.374,2.077 80.361,5.160 C89.583,9.908 94.528,20.156 97.310,30.121 C97.438,30.578 97.561,31.039 97.682,31.500 C100.721,43.123 101.423,55.927 95.798,66.493 Z"/>
+										</svg>
+									</div>
+									<h3 class="item-title"><a href="serviceDetails.php#mob">Mobile Application</a></h3>
+									<a href="serviceDetails.php#mob" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-sm-6 col-12 masonry-item has-animation">
+							<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-300">
+								<div class="service-box-layout1">
+									<div class="icon-holder icon-bg-emerald">
+										<div class="item-icon icon-color-emerald">
+											<i class="flaticon-think"></i>
+										</div>
+										<svg class="icon-bg-shape" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="111px" height="79px">
+								<path d="M104.291,51.828 C98.019,60.839 88.939,65.934 79.675,69.589 C78.703,69.973 77.729,70.339 76.756,70.695 C70.214,73.079 63.555,75.012 56.818,76.487 C52.170,77.504 46.185,79.782 41.377,78.729 C35.709,77.491 29.573,72.385 24.073,66.622 C19.930,62.282 16.148,57.570 13.202,53.858 C9.879,49.670 6.733,45.085 4.332,40.057 C2.705,36.648 1.416,33.039 0.660,29.205 C0.495,28.369 0.363,27.520 0.260,26.664 C-0.809,17.814 1.431,8.213 7.280,3.434 C12.395,-0.743 19.166,-0.569 25.289,1.096 C31.411,2.760 37.332,5.756 43.525,6.802 C50.958,8.057 58.411,6.451 65.704,4.762 C72.997,3.075 80.398,1.296 87.854,2.211 C88.123,2.244 88.392,2.289 88.661,2.332 C95.524,3.379 102.448,7.076 106.734,13.861 C106.943,14.192 107.153,14.521 107.349,14.867 C113.666,26.001 111.221,41.873 104.291,51.828 Z"/>
+							</svg>
+									</div>
+									<h3 class="item-title"><a href="serviceDetails.php#testing">Testing</a></h3>
 									<a href="serviceDetails.php#testing" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
 								</div>
 							</div>
@@ -108,7 +175,6 @@
 							</svg>
 									</div>
 									<h3 class="item-title"><a href="serviceDetails.php#mobile_Application" >Saok Testing</a></h3>
-									<p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
 									<a href="serviceDetails.php#mobile_Application" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
 								</div>
 							</div>
@@ -127,11 +193,11 @@
 									</div>
 									<h3 class="item-title"><a href="serviceDetails.php#on_com">Online communication
 										Application</a></h3>
-									<p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
 									<a href="serviceDetails.php#on_com" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
 								</div>
 							</div>
 						</div>
+
 						<div class="col-lg-4 col-sm-6 col-12 masonry-item has-animation">
 							<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-500">
 								<div class="service-box-layout1">
@@ -144,7 +210,6 @@
 							</svg>
 									</div>
 									<h3 class="item-title"><a href="serviceDetails.php#hard_sol">Hardware Solution</a></h3>
-									<p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
 									<a href="serviceDetails.php#hard_sol" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
 								</div>
 							</div>
@@ -161,7 +226,6 @@
 							</svg>
 									</div>
 									<h3 class="item-title"><a href="serviceDetails.php#com_soft">Computer Software</a></h3>
-									<p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
 									<a href="serviceDetails.php#com_soft" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
 								</div>
 							</div>
@@ -178,7 +242,6 @@
 							</svg>
 									</div>
 									<h3 class="item-title"><a href="serviceDetails.php#m_host">Music Hosting website</a></h3>
-									<p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
 									<a href="serviceDetails.php#m_host" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
 								</div>
 							</div>
@@ -197,74 +260,14 @@
 							</svg>
 									</div>
 									<h3 class="item-title"><a href="serviceDetails.php#com_web">Domain & Hosting</a></h3>
-									<p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
 									<a href="serviceDetails.php#com_web" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
 								</div>
 							</div>
-						</div>
-<!-- 
-						<div class="col-lg-4 col-sm-6 col-12 masonry-item has-animation">
-							<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-300">
-								<div class="service-box-layout1">
-									<div class="icon-holder icon-bg-royal-blue">
-										<div class="item-icon icon-color-royal-blue">
-											<i class="flaticon-video"></i>
-										</div>
-										<svg class="icon-bg-shape" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="111px" height="79px">
-								<path d="M104.291,51.828 C98.019,60.839 88.939,65.934 79.675,69.589 C78.703,69.973 77.729,70.339 76.756,70.695 C70.214,73.079 63.555,75.012 56.818,76.487 C52.170,77.504 46.185,79.782 41.377,78.729 C35.709,77.491 29.573,72.385 24.073,66.622 C19.930,62.282 16.148,57.570 13.202,53.858 C9.879,49.670 6.733,45.085 4.332,40.057 C2.705,36.648 1.416,33.039 0.660,29.205 C0.495,28.369 0.363,27.520 0.260,26.664 C-0.809,17.814 1.431,8.213 7.280,3.434 C12.395,-0.743 19.166,-0.569 25.289,1.096 C31.411,2.760 37.332,5.756 43.525,6.802 C50.958,8.057 58.411,6.451 65.704,4.762 C72.997,3.075 80.398,1.296 87.854,2.211 C88.123,2.244 88.392,2.289 88.661,2.332 C95.524,3.379 102.448,7.076 106.734,13.861 C106.943,14.192 107.153,14.521 107.349,14.867 C113.666,26.001 111.221,41.873 104.291,51.828 Z"/>
-							</svg>
-									</div>
-									<h3 class="item-title"><a href="serviceDetails.php#vid_web">Video hosting Website</a></h3>
-									<p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
-									<a href="serviceDetails.php#vid_web" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-sm-6 col-12 masonry-item has-animation">
-							<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-300">
-								<div class="service-box-layout1">
-									<div class="icon-holder icon-bg-california">
-										<div class="item-icon icon-color-california">
-											<i class="flaticon-tracking"></i>
-										</div>
-										<svg class="icon-bg-shape" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="80px">
-											<path d="M95.798,66.493 C95.402,67.238 94.989,67.934 94.568,68.608 C92.140,72.492 89.322,75.200 86.228,76.996 C75.718,83.098 62.044,78.694 49.794,74.183 C30.107,66.931 13.369,52.019 4.629,32.917 C0.428,23.737 -1.365,11.491 6.138,4.714 C11.356,0.001 19.072,-0.185 26.172,0.068 C26.493,0.079 26.814,0.090 27.132,0.103 C31.363,0.275 35.595,0.448 39.826,0.620 C45.043,0.833 50.261,1.045 55.479,1.256 C57.205,1.327 58.931,1.397 60.658,1.467 C67.392,1.740 74.374,2.077 80.361,5.160 C89.583,9.908 94.528,20.156 97.310,30.121 C97.438,30.578 97.561,31.039 97.682,31.500 C100.721,43.123 101.423,55.927 95.798,66.493 Z"/>
-										</svg>
-									</div>
-									<h3 class="item-title"><a href="serviceDetails.php#real_track">Real time tracking Website</a></h3>
-									<p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
-									<a href="serviceDetails.php#real_track" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-sm-6 col-12 masonry-item has-animation">
-							<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-300">
-								<div class="service-box-layout1">
-									<div class="icon-holder icon-bg-emerald">
-										<div class="item-icon icon-color-emerald">
-											<i class="flaticon-value"></i>
-										</div>
-										<svg class="icon-bg-shape" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="111px" height="79px">
-								<path d="M104.291,51.828 C98.019,60.839 88.939,65.934 79.675,69.589 C78.703,69.973 77.729,70.339 76.756,70.695 C70.214,73.079 63.555,75.012 56.818,76.487 C52.170,77.504 46.185,79.782 41.377,78.729 C35.709,77.491 29.573,72.385 24.073,66.622 C19.930,62.282 16.148,57.570 13.202,53.858 C9.879,49.670 6.733,45.085 4.332,40.057 C2.705,36.648 1.416,33.039 0.660,29.205 C0.495,28.369 0.363,27.520 0.260,26.664 C-0.809,17.814 1.431,8.213 7.280,3.434 C12.395,-0.743 19.166,-0.569 25.289,1.096 C31.411,2.760 37.332,5.756 43.525,6.802 C50.958,8.057 58.411,6.451 65.704,4.762 C72.997,3.075 80.398,1.296 87.854,2.211 C88.123,2.244 88.392,2.289 88.661,2.332 C95.524,3.379 102.448,7.076 106.734,13.861 C106.943,14.192 107.153,14.521 107.349,14.867 C113.666,26.001 111.221,41.873 104.291,51.828 Z"/>
-							</svg>
-									</div>
-									<h3 class="item-title"><a href="serviceDetails.php#i_soft">SSL Commerce</a></h3>
-									<p>Grursus mal suada faci ipsum to and the and dolarorit ametion consectetur elitto more bulum that odio...</p>
-									<a href="serviceDetails.php#i_soft" class="btn-text">Discover Now<i class="flaticon-next"></i></a>
-								</div>
-							</div>
-						</div> -->
-
-
-					</div>
-
-					<div class="translate-bottom-75 opacity-animation transition-150 transition-delay-1900 text-center">
-										<a href="serviceDetails.php" class="btn-fill btn-gradient">View More<i class="flaticon-next"></i></a>
-					</div>
-				</div>
-			</section>
+						</div>`
+					
+						}
+			</script>	
+	
 			<!--=====================================-->
 			<!--=     Service Section Area End      =-->
 			<!--=====================================-->

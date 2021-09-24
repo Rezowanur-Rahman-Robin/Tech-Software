@@ -1,3 +1,9 @@
+
+<?php
+ 
+ include("includes/db.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -146,7 +152,7 @@ include("sections/header.php");
 									<div class="item-content">
 										<h3 class="item-title">Email &amp; Phone</h3>
 										<ul class="list-item">
-											<li class="list_text">wetech.io@aol.com</li>
+											<li class="list_text">wetechbd2.0@gmail.com</li>
 											<li ><li class="list_text">+88 01745 968 765</li></li>
                                             
 										</ul>
@@ -176,7 +182,7 @@ include("sections/header.php");
 									<div class="item-content">
 										<h3 class="item-title">Get In Touch</h3>
 										<ul class="list-item">
-											<li class="list_text"><a mailto="wetech.io@aol.com">wetech.io@aol.com</a></li>
+											<li class="list_text"><a mailto="wetechbd2.0@gmail.com">wetechbd2.0@gmail.com</a></li>
 											<li class="socail_connection list_text">	
                                                 <ul class="footer-social" style="display: flex;
     justify-content: space-between;">

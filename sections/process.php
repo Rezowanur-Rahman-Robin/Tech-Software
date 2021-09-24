@@ -23,7 +23,6 @@
 
 
 						</div>
-						<p class="heading-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting has been the industry's standard dummy text ever since</p>
 					</div>
 				</div>
 				<div class="container-fluid">
