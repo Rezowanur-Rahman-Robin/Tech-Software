@@ -200,7 +200,7 @@ include("sections/header.php");
 						</div>
 						<div class="col-lg-8 has-animation">
 							<div class="contact-box-layout3">
-								<form class="contact-form-box" id="contact-form">
+								<form class="contact-form-box" action="contact.php" id="contact-form" method="post">
 									<div class="row">
 										<div class="col-md-6 form-group">
 											<div class="translate-bottom-50 opacity-animation transition-100 transition-delay-1200">
@@ -228,19 +228,81 @@ include("sections/header.php");
 										</div>
 										<div class="col-12 form-group mb-0">
 											<div class="translate-bottom-50 opacity-animation transition-100 transition-delay-2000">
-												<button type="submit" class="btn-fill btn-gradient">Send Message</button>
+												<input type="submit" name="send" value="Send" style="margin-top: 20px;background-color: #ff5200;" class="btn btn-danger" id="sendBtn">
 											</div>
 										</div>
 									</div>
 									<div class="form-response"></div>
 								</form>
+								
+								<?php
+								
+									if(isset($_POST['send'])){
+    
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+	 $message =str_replace("'","\'",$message);
+	
+	$body=  "<h2>Mail From:   $email</h2><h2>Sender Name:   $name</h2><h2 align='center'>Message:</h2><hr>
+	
+	   <h3 align='center'> $message</h3>";
+    
+
+    require 'mail/PHPMailerAutoload.php';
+        
+        
+
+       
+
+   $mail = new PHPMailer();
+   $mail ->IsSmtp();
+   $mail ->Host = "smtp.gmail.com";
+   $mail ->Port = 587; // or 465
+   $mail ->SMTPAuth = true;
+   $mail ->SMTPSecure = 'tls';
+ 
+    $mail ->Username = "rob1510697@gmail.com";
+   $mail ->Password = "okyhusopswexngdy";
+
+   $mail ->setFrom($email);
+   $mail ->addAddress('robincuetcse@gmail.com');
+   $mail ->addReplyTo($email);
+
+
+   $mail ->IsHTML(true);
+   $mail ->Subject = $subject;
+   $mail ->Body = $body;
+   
+  
+
+   if(!$mail->send())
+   {
+       echo "<script>alert('Message sending failed.')</script>";
+       
+   
+   }
+   else
+   {
+     echo "<script>alert('Message has been sent.')</script>";
+       
+    
+   }
+			
+									    
+		}
+								
+								
+								?>
 							</div>
 						</div>
 					</div>
 					<div class="box-bottom-margin">
 						<div class="google-map">
 							<h2>Find us on Map</h2> <hr>
-						<div class="mapouter"><div class="gmap_canvas"><iframe width="663" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=South%20Banasree,%20Dhaka-1219&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:663px;}</style><a href="https://www.embedgooglemap.net">embed google map responsive</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:663px;}</style></div></div>
+							<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=23.7550458,90.4416505&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-org.net"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">google maps embed iframe generator</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+						
 						</div>
 
 					</div>

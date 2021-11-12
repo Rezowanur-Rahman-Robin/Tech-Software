@@ -204,6 +204,8 @@
   /*-------------------------------------
   Contact Form initiating
   -------------------------------------*/
+
+  /*
   var contactForm = $('#contact-form');
   if (contactForm.length) {
     contactForm.validator().on('submit', function(e) {
@@ -232,6 +234,8 @@
       }
     });
   }
+
+  */
 
   /*-------------------------------------
   Select2 activation code

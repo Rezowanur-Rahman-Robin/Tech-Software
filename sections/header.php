@@ -10,7 +10,7 @@
 								<div class="col-lg-2 d-flex justify-content-start">
 									<div class="temp-logo text-center">
 										<a href="index.php" class="default-logo">
-						<img src="media/we_tech-logo.png" alt="logo" class="img-fluid logoCls">
+						<img src="media/We-tech-logo.png" alt="logo" class="img-fluid logoCls">
 					</a>
 										<a href="index.php" class="sticky-logo">
 						<img src="media/we_tech-logo.png" alt="logo" class="img-fluid logoCls">

@@ -12,7 +12,7 @@ if(localStorage.getItem('phone')){
 }
 
 </script>
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
   	<title>Admin Login</title>

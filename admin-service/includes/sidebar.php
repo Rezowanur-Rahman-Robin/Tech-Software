@@ -1,4 +1,6 @@
+
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -26,6 +28,7 @@
   <script src="https://cdn.tiny.cloud/1/bwg0q0j9lxtive63e9uvn074bpdjtnbkd49jxu09mpp7tnb2/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
 <script>
+
   tinymce.init({
     selector: 'textarea',
     plugins: [
@@ -34,8 +37,12 @@
              'insertdatetime media table paste code help wordcount'
            ],
     
- });
+             });
+
+            
 </script>
+
+
  
   <!-- Google Tag Manager -->
   <script>
@@ -71,7 +78,7 @@
   <div class="wrapper ">
 
 
- 
+
  
  <div class="sidebar"  data-color="purple" data-background-color="black" data-image="../assets/img/sidebar-2.jpg">
       <!--

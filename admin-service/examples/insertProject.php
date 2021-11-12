@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
 
 include("../includes/db.php");
@@ -48,7 +49,7 @@ include("../includes/sidebar.php");
     <div class="form-group"  >
       <label style=" font-weight: 1000;
     color: white;" for="p_title">Project Title:</label>
-      <input type="text" class="form-control"  placeholder="Enter admin name" name="p_title" required>
+      <input type="text" class="form-control"  placeholder="Enter Project Title" name="p_title" required>
     </div>
 
 
